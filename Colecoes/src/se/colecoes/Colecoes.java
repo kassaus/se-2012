@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 public class Colecoes extends Activity {
     //teste antonio
-	//teste Paulo
+	//teste Pa
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
