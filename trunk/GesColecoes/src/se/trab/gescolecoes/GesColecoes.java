@@ -120,26 +120,40 @@ public class GesColecoes extends Activity {
             
             if (format.contains("QR_CODE"))
             {
+            	
+            	 Cursor cqr = bd.getItem("qrcode", contents);
+            	 if (cqr.getCount()>0)
+            	 {
+            		 // mostrar resultados
+            	 }
             	// Gerar JSON para QRCODE
             }
-            else
+            else//Os barcodes podem ter varios tipos de especificação e o formato identifica-os
             {
+            	Cursor ccb = bd.getItem("barcode", contents);
+            	if (ccb.getCount()>0)
+	           	{
+            		// mostrar resultados
+	           	}
             	// Gerar JSON para BARCODE
             }
             
-            // Enviar JSON
+            // Enviar pedido de consulta de dados ao servidor
             
             // Recolher Resposta
             
-            // Fazer Busca à bd Local pelos dados Nome Autor editor
-            
+            // Recolhe todos os items
             Cursor c = bd.getItems();
         	
         	FuzzySearch fz = new FuzzySearch();
             
+        	// Fazer Busca no resultado pelos dados Nome Autor editor
+        	
+        	// TESTE FUZZYSEARCH
         	String str = "Irma Dadé - Anel de Sangue";
         	
             fz.testeArrayStrings(c, str);
+            // FIM TESTE
             
             // Apresentar resultados se houver
             
