@@ -1,34 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical" >
+
     <TextView
+        android:id="@+id/id_livro"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:text= "@string/username" />
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:id="@+id/user" />
+        android:visibility="gone" />
+
     <TextView
+        android:id="@+id/type"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:text="@string/password"/>
-    <EditText
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:inputType="textPassword"
-        android:id="@+id/pass" />
-    <Button
-        android:id="@+id/login"
-        android:text="@string/login"
-        android:background="@drawable/botao1"
-        style="@style/ButtonText"
-        />
-    
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
 </LinearLayout>

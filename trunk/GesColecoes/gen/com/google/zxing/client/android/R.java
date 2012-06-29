@@ -129,10 +129,12 @@ public final class R {
         public static final int beep=0x7f050000;
     }
     public static final class string {
-        public static final int ano=0x7f09007d;
+        public static final int activateNetwork=0x7f090082;
         public static final int app_name=0x7f090000;
         public static final int app_picker_name=0x7f090001;
-        public static final int autor=0x7f09007c;
+        public static final int author=0x7f090086;
+        public static final int back=0x7f090083;
+        public static final int barCode=0x7f09008d;
         public static final int bookmark_picker_name=0x7f090002;
         public static final int button_add_calendar=0x7f090003;
         public static final int button_add_contact=0x7f090004;
@@ -161,13 +163,18 @@ public final class R {
         public static final int button_sms=0x7f09001b;
         public static final int button_web_search=0x7f09001c;
         public static final int button_wifi=0x7f09001d;
-        public static final int capturar=0x7f090079;
+        public static final int capture=0x7f090088;
+        public static final int collection=0x7f09008a;
         public static final int contents_contact=0x7f09001e;
         public static final int contents_email=0x7f09001f;
         public static final int contents_location=0x7f090020;
         public static final int contents_phone=0x7f090021;
         public static final int contents_sms=0x7f090022;
         public static final int contents_text=0x7f090023;
+        public static final int doBackup=0x7f09007b;
+        public static final int doRestore=0x7f09007c;
+        public static final int editionYear=0x7f09008c;
+        public static final int editor=0x7f090081;
         public static final int hello=0x7f090078;
         public static final int history_clear_one_history_text=0x7f090025;
         public static final int history_clear_text=0x7f090024;
@@ -176,7 +183,9 @@ public final class R {
         public static final int history_empty_detail=0x7f090028;
         public static final int history_send=0x7f090029;
         public static final int history_title=0x7f09002a;
-        public static final int listar=0x7f09007a;
+        public static final int list=0x7f090084;
+        public static final int login=0x7f090080;
+        public static final int loginError=0x7f09007d;
         public static final int menu_about=0x7f09002b;
         public static final int menu_encode_mecard=0x7f09002c;
         public static final int menu_encode_vcard=0x7f09002d;
@@ -212,7 +221,9 @@ public final class R {
         public static final int msg_share_text=0x7f09004b;
         public static final int msg_sure=0x7f09004c;
         public static final int msg_unmount_usb=0x7f09004d;
-        public static final int no=0x7f090081;
+        public static final int no=0x7f09007a;
+        public static final int obs=0x7f09008b;
+        public static final int password=0x7f09007f;
         public static final int preferences_actions_title=0x7f09004e;
         public static final int preferences_bulk_mode_summary=0x7f09004f;
         public static final int preferences_bulk_mode_title=0x7f090050;
@@ -237,6 +248,7 @@ public final class R {
         public static final int preferences_supplemental_summary=0x7f090063;
         public static final int preferences_supplemental_title=0x7f090064;
         public static final int preferences_vibrate_title=0x7f090065;
+        public static final int qrCode=0x7f090089;
         public static final int result_address_book=0x7f090066;
         public static final int result_calendar=0x7f090067;
         public static final int result_email_address=0x7f090068;
@@ -250,14 +262,14 @@ public final class R {
         public static final int result_wifi=0x7f090070;
         public static final int sbc_name=0x7f090071;
         public static final int share_name=0x7f090072;
-        public static final int sync_ativar_rede=0x7f09007f;
+        public static final int title=0x7f090087;
         public static final int title_about=0x7f090073;
-        public static final int titulo=0x7f09007e;
-        public static final int voltar=0x7f09007b;
+        public static final int type=0x7f090085;
+        public static final int username=0x7f09007e;
         public static final int wifi_changing_network=0x7f090074;
         public static final int wifi_ssid_label=0x7f090075;
         public static final int wifi_type_label=0x7f090076;
-        public static final int yes=0x7f090080;
+        public static final int yes=0x7f090079;
         public static final int zxing_url=0x7f090077;
     }
     public static final class style {

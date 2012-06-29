@@ -72,7 +72,7 @@ public class GesColecoes extends Activity {
 	       // intent.putExtra("SCAN_MODE", "PRODUCT_MODE");
 	        startActivityForResult(scan, 1);
     	} catch (ActivityNotFoundException anfex) {
-            Log.e("capturarCodigo", "Não Enontrou o scaner", anfex);
+            Log.e("capturarCodigo", "Não Encontrou o scanner", anfex);
         }      	
     	
     }
@@ -101,9 +101,10 @@ public class GesColecoes extends Activity {
         }
     } // onActivityResult (fim)
  
+    
     public void trataResultadoActivityLogin(int resultCode, Intent intent){
     	if (resultCode==1){
-    		Toast toast = Toast.makeText(this, "Erro de Login!" , Toast.LENGTH_LONG);
+    		Toast toast = Toast.makeText(this, "@string/loginError" , Toast.LENGTH_LONG);
             toast.setGravity(Gravity.TOP, 25, 400);
             toast.show();
     	}

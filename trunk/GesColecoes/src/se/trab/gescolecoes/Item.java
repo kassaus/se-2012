@@ -16,9 +16,18 @@ public class Item {
     public String obs_pess;
     public int id_coll;
     
-    public Item ( String tipo,String titulo,String autor,String editor,
-    				String ano_pub,String edicao,String qrcode,String barcode,
-    				String ext_tipo,String obs_pess,int id_coll){
+    public Item ( 	String tipo,
+    				String titulo,
+    				String autor,
+    				String editor,
+    				String ano_pub,
+    				String edicao,
+    				String qrcode,
+    				String barcode,
+    				String ext_tipo,
+    				String obs_pess,
+					int id_coll
+				){
     	
     	this.tipo=tipo; 
     	this.titulo=titulo; 

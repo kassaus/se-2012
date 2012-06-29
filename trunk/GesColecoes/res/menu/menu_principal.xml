@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-	<item android:id="@+id/ler"
-		android:title="Ler lista" 
-		android:icon="@drawable/ler"
-		/>
-    <item android:id="@+id/sair"
-	 	android:title="Sair" 
-		android:icon="@drawable/sair"
-	 	/>
+
+    <item
+        android:id="@+id/ler"
+        android:icon="@drawable/ler"
+        android:title="@strings/readList"/>
+    <item
+        android:id="@+id/sair"
+        android:icon="@drawable/sair"
+        android:title="@strings/exit"/>
+
 </menu>

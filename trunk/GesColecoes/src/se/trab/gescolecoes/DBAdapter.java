@@ -21,7 +21,7 @@ public class DBAdapter {
 	    	+ "editor VARCHAR(255), "
 	    	+ "ano_pub VARCHAR(8), "
 	    	+ "edicao VARCHAR(255), "
-	    	+ "qrcode BLOB, "
+	    	+ "qrcode VARCHAR(1024), "
 	    	+ "barcode VARCHAR(18), "
 	    	+ "ext_tipo VARCHAR(255), "
 	    	+ "obs_pess VARCHAR(1024), "

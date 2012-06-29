@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello World, Livros!</string>
+    <string name="app_name">MobiCollection</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="doBackup">Backup to server</string>
+    <string name="doRestore">Restore from server</string>
+    <string name="loginError">Error! Invalid login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="editor">Editor</string>
+    <string name="activateNetwork">Activate network?</string>
+    <string name="back">Back</string>
+    <string name="list">List</string>
+    <string name="type">Type</string>
+    <string name="author">Author</string>
+    <string name="title">Title</string>
+    <string name="capture">Capture</string>
+    <string name="qrCode">QrCode</string>
+    <string name="collection">Collection</string>
+    <string name="obs">Extras</string>
+    <string name="editionYear">Edition Year</string>
+    <string name="barCode">Barcode</string>
+    <string name="readList">Read list</string>
+    <string name="exit">Exit</string>
+</resources>

@@ -1,16 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
-
     <string name="hello">Hello World, Livros!</string>
-    <string name="app_name">MobiColletion</string>
-	<string name="capturar">Capturar</string>
-    <string name="listar">Listar</string>
-    <string name="voltar">Voltar</string>
-    <string name="autor">Autor</string>
-    <string name="ano">Ano de edição</string>
-    <string name="titulo">Titulo</string>
-    <string name="sync_ativar_rede">Quer Ativar a REDE?</string>
-	<string name="yes">SIM</string>
-	<string name="no">NÃO</string>
-
+    <string name="app_name">MobiCollection</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="doBackup">Fazer Backup no servidor</string>
+    <string name="doRestore">Fazer Restore do servidor</string>
+    <string name="loginError">Erro! Login inválido</string>
+    <string name="username">Nome de utilizador</string>
+    <string name="password">Palavra-passe</string>
+    <string name="login">Entrar</string>
+    <string name="editor">Editor	</string>
+    <string name="activateNetwork">Quer ativar a rede?</string>
+    <string name="back">Voltar</string>
+    <string name="list">Listar</string>
+    <string name="type">Tipo</string>
+    <string name="author">Autor</string>
+    <string name="title">Título</string>
+    <string name="capture">Capturar</string>
+    <string name="qrCode">Código QR</string>
+    <string name="collection">Coleção</string>
+    <string name="obs">Observações</string>
+    <string name="editionYear">Ano de edição</string>
+    <string name="barCode">Código de barras</string>
+    <string name="readList">Ler lista</string>
+    <string name="exit">Sair</string>
 </resources>

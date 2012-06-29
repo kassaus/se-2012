@@ -100,7 +100,7 @@ public class Login extends Activity {
     
     public void ativaRede(final int codigo) {
     	AlertDialog.Builder builder = new AlertDialog.Builder(this);
-    	builder.setMessage(getResources().getString(R.string.sync_ativar_rede))
+    	builder.setMessage(getResources().getString(R.string.activateNetwork))
     	       .setCancelable(false)
     	       .setPositiveButton(getResources().getString(R.string.yes), new DialogInterface.OnClickListener(){
     	           public void onClick(DialogInterface dialog, int id) {
