@@ -53,14 +53,16 @@ public final class R {
         public static final int shopper_icon=0x7f02000c;
     }
     public static final class id {
+        public static final int author=0x7f080027;
         /**  Messages IDs 
          */
         public static final int auto_focus=0x7f080000;
+        public static final int back=0x7f080028;
         public static final int back_button=0x7f080020;
         public static final int barcode_image_view=0x7f08000f;
         public static final int bookmark_title=0x7f08000a;
         public static final int bookmark_url=0x7f08000b;
-        public static final int capturar=0x7f080027;
+        public static final int capturar=0x7f08002d;
         public static final int contents_supplement_text_view=0x7f080019;
         public static final int contents_text_view=0x7f080018;
         public static final int decode=0x7f080001;
@@ -73,40 +75,44 @@ public final class R {
         public static final int help_contents=0x7f08001f;
         public static final int history_detail=0x7f080023;
         public static final int history_title=0x7f080022;
+        public static final int id_livro=0x7f080024;
         public static final int image_view=0x7f08001e;
         public static final int launch_product_query=0x7f080004;
-        public static final int ler=0x7f080033;
-        public static final int listar=0x7f080028;
-        public static final int login=0x7f080026;
+        public static final int ler=0x7f080039;
+        public static final int lista=0x7f080029;
+        public static final int listar=0x7f08002e;
+        public static final int login=0x7f08002c;
         public static final int meta_text_view=0x7f080017;
         public static final int meta_text_view_label=0x7f080016;
-        public static final int page_number_view=0x7f08002c;
-        public static final int pass=0x7f080025;
+        public static final int page_number_view=0x7f080032;
+        public static final int pass=0x7f08002b;
         public static final int preview_view=0x7f08000c;
-        public static final int query_button=0x7f08002a;
-        public static final int query_text_view=0x7f080029;
+        public static final int query_button=0x7f080030;
+        public static final int query_text_view=0x7f08002f;
         public static final int quit=0x7f080005;
         public static final int restart_preview=0x7f080006;
         public static final int result_button_view=0x7f08001a;
-        public static final int result_list_view=0x7f08002b;
+        public static final int result_list_view=0x7f080031;
         public static final int result_view=0x7f08000e;
         public static final int return_scan_result=0x7f080007;
-        public static final int sair=0x7f080034;
+        public static final int sair=0x7f08003a;
         public static final int search_book_contents_failed=0x7f080008;
         public static final int search_book_contents_succeeded=0x7f080009;
-        public static final int share_app_button=0x7f08002e;
-        public static final int share_bookmark_button=0x7f08002f;
-        public static final int share_clipboard_button=0x7f080031;
-        public static final int share_contact_button=0x7f080030;
-        public static final int share_text_view=0x7f080032;
+        public static final int share_app_button=0x7f080034;
+        public static final int share_bookmark_button=0x7f080035;
+        public static final int share_clipboard_button=0x7f080037;
+        public static final int share_contact_button=0x7f080036;
+        public static final int share_text_view=0x7f080038;
         public static final int shopper_button=0x7f08001b;
-        public static final int snippet_view=0x7f08002d;
+        public static final int snippet_view=0x7f080033;
         public static final int status_view=0x7f08001c;
         public static final int time_text_view=0x7f080015;
         public static final int time_text_view_label=0x7f080014;
+        public static final int title=0x7f080026;
+        public static final int type=0x7f080025;
         public static final int type_text_view=0x7f080013;
         public static final int type_text_view_label=0x7f080012;
-        public static final int user=0x7f080024;
+        public static final int user=0x7f08002a;
         public static final int viewfinder_view=0x7f08000d;
     }
     public static final class layout {
@@ -115,12 +121,14 @@ public final class R {
         public static final int encode=0x7f030002;
         public static final int help=0x7f030003;
         public static final int history_list_item=0x7f030004;
-        public static final int login=0x7f030005;
-        public static final int main=0x7f030006;
-        public static final int search_book_contents=0x7f030007;
-        public static final int search_book_contents_header=0x7f030008;
-        public static final int search_book_contents_list_item=0x7f030009;
-        public static final int share=0x7f03000a;
+        public static final int item=0x7f030005;
+        public static final int lista=0x7f030006;
+        public static final int login=0x7f030007;
+        public static final int main=0x7f030008;
+        public static final int search_book_contents=0x7f030009;
+        public static final int search_book_contents_header=0x7f03000a;
+        public static final int search_book_contents_list_item=0x7f03000b;
+        public static final int share=0x7f03000c;
     }
     public static final class menu {
         public static final int menu_principal=0x7f0b0000;
@@ -175,6 +183,7 @@ public final class R {
         public static final int doRestore=0x7f09007c;
         public static final int editionYear=0x7f09008c;
         public static final int editor=0x7f090081;
+        public static final int exit=0x7f09008f;
         public static final int hello=0x7f090078;
         public static final int history_clear_one_history_text=0x7f090025;
         public static final int history_clear_text=0x7f090024;
@@ -249,6 +258,7 @@ public final class R {
         public static final int preferences_supplemental_title=0x7f090064;
         public static final int preferences_vibrate_title=0x7f090065;
         public static final int qrCode=0x7f090089;
+        public static final int readList=0x7f09008e;
         public static final int result_address_book=0x7f090066;
         public static final int result_calendar=0x7f090067;
         public static final int result_email_address=0x7f090068;
