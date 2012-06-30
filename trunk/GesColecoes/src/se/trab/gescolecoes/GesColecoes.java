@@ -12,8 +12,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -53,14 +58,24 @@ public class GesColecoes extends Activity {
 			}
 		});
         
-		/*bd.deleteAllItems();
-        bd.insertItem("Filme", "Senhor dos Aneis - A Irmandade do Anel", "autor1", "editor1", "2001", "1a", "", "", "DVD", "Edição Colecionador Autografada");
-        bd.insertItem("Filme", "Senhor dos Aneis - As Duas Torres", "autor1", "editor1", "2002", "1a", "", "", "DVD", "Edição Colecionador Autografada");
-        bd.insertItem("Filme", "Senhor dos Aneis - O Regresso do Rei", "autor1", "editor1", "2003", "1a", "", "", "DVD", "Edição Colecionador Autografada");
-        bd.insertItem("Filme", "O Hobbit ou Lá e de Volta Outra Vez", "autor2", "editor2", "2010", "Pre-Release", "", "", "DVD", "Edição Pirata");
-        bd.insertItem("Filme", "A Mascara de Zorro", "autor3", "editor3", "2004", "", "", "", "DVD", "Acção e Cat. Zeta Jones");
-        bd.insertItem("Filme", "Pontes de Maddisson County", "autor3", "editor3", "2007", "", "", "", "DVD", "Granda Seca");
-        */
+		bd.deleteAllItems();
+		
+		Item tmpItem = new Item("Filme", "Senhor dos Aneis - A Irmandade do Anel", "autor1", "editor1", "2001", "1a", "qrcode", "", "DVD", "Edição Colecionador Autografada", 1);
+		bd.insertItem(tmpItem);
+		
+
+		tmpItem = new Item("Filme", "Senhor dos Aneis - A Irmandade do Anel", "autor1", "editor1", "2001", "1a", "qrcode", "", "DVD", "Edição Colecionador Autografada", 1);
+		bd.insertItem(tmpItem);
+		tmpItem = new Item("Filme", "Senhor dos Aneis - As Duas Torres", "autor1", "editor1", "2002", "1a", "qrcode", "", "DVD", "Edição Colecionador Autografada",1);
+		bd.insertItem(tmpItem);
+		tmpItem = new Item("Filme", "Senhor dos Aneis - O Regresso do Rei", "autor1", "editor1", "2003", "1a", "qrcode", "", "DVD", "Edição Colecionador Autografada",1);
+		bd.insertItem(tmpItem);
+		tmpItem = new Item("Filme", "O Hobbit ou Lá e de Volta Outra Vez", "autor2", "editor2", "2010", "Pre-Release", "qrcode", "", "DVD", "Edição Pirata",1);
+		bd.insertItem(tmpItem);
+		tmpItem = new Item("Filme", "A Mascara de Zorro", "autor3", "editor3", "2004", "qrcode", "", "", "DVD", "Acção e Cat. Zeta Jones",1);
+		bd.insertItem(tmpItem);
+		tmpItem = new Item("Filme", "Pontes de Maddisson County", "autor3", "editor3", "2007", "", "", "", "DVD", "Granda Seca",1);
+		bd.insertItem(tmpItem);
         
              
     }
@@ -82,7 +97,8 @@ public class GesColecoes extends Activity {
     
     public void listarItems()
     {
-    	Toast.makeText(this, "VAMOS LISTAR", Toast.LENGTH_SHORT).show();
+//    	Toast.makeText(this, "VAMOS LISTAR", Toast.LENGTH_SHORT).show();
+    	mostraLista();
     }
     
     @Override
@@ -194,4 +210,76 @@ public class GesColecoes extends Activity {
             toast.show();               
         }
     }// trataResultadoActivityScan (fim)
+    
+    
+    
+    
+
+	public void mostraLista() {
+		setContentView(R.layout.lista);
+		Button voltar = (Button) findViewById(R.id.back);
+		ListView lista = (ListView) findViewById(R.id.lista);
+
+		String[] from = new String[] { "_id", "tipo", "titulo", "autor" };
+		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author };
+
+		Cursor cursor = bd.getItems();
+
+		SimpleCursorAdapter listaItens = new SimpleCursorAdapter(this,
+				R.layout.item, cursor, from, to);
+		listaItens.notifyDataSetChanged();
+
+		lista.setAdapter(listaItens);
+
+		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+
+				int i = Integer.parseInt(((TextView) ((LinearLayout) view)
+						.getChildAt(0)).getText().toString());
+				mostraDetalhe(i);
+			}
+		});
+
+	}
+	
+	public void mostraDetalhe(int i) {
+		setContentView(R.layout.detail);
+
+		
+		Button back = (Button) findViewById(R.id.back);
+		
+		TextView idItem = (TextView)findViewById(R.id.id_item);
+		TextView type = (TextView)findViewById(R.id.type);
+//		TextView idItem = (TextView)findViewById(R.id.id_item);
+//		TextView idItem = (TextView)findViewById(R.id.id_item);
+//		TextView idItem = (TextView)findViewById(R.id.id_item);
+
+//		String from[] = new String[] { "_id", "tipo", "titulo",
+//				"autor", "editor", "ano_pub", "edicao", "ext_tipo",
+//				"obs_pess" };
+//
+//		int to[] = new int[] { R.id.id_item, R.id.type, R.id.title,
+//				R.id.author, R.id.editor, R.id.year, R.id.edition,
+//				R.id.ext_type, R.id.obs_pess };
+
+//		Cursor cursor = bd.getItem("_id", Integer.toString(i));
+		
+		Cursor cursor = bd.getItemById(i);
+		cursor.moveToFirst();
+		
+		idItem.setText(cursor.getString(cursor.getColumnIndex("_id")));
+
+		type.setText(cursor.getString(cursor.getColumnIndex("tipo")));
+		
+		
+//		SimpleCursorAdapter detail; 
+//				
+//		detail = new SimpleCursorAdapter(this, R.layout.detail, cursor, from, to);
+		
+		
+
+	}
+	
+
 }

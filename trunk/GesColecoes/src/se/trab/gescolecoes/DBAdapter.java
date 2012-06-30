@@ -160,6 +160,12 @@ public class DBAdapter {
                 		null);
     }
     
+    public Cursor getItemById(int id){
+    	
+    	return db.query("item", new String[]{"_id", "tipo"}, "_id=?" , new String[]{"id"} , null, null, null);
+    				
+    }
+    
   //---retrieves a collection---
   // coluna : nome da coluna na BD
   // Valor : Valor a usar como filtro

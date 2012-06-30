@@ -42,6 +42,7 @@ public class Item {
     	this.id_coll=id_coll;
     }
     
+    
     public Item ( JSONObject object){
     	try {
 			this.tipo=object.getString("tipo");
