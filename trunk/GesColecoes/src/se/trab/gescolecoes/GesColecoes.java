@@ -13,8 +13,8 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
-import com.google.zxing.client.android.Intents.Scan;
 
 
 public class GesColecoes extends Activity {
@@ -23,13 +23,15 @@ public class GesColecoes extends Activity {
 	
 	Button capturar;
 	Button listar;
+
 	
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-        
+        setContentView(R.layout.main);       
+       
+       findViewById(R.id.logo);        
         capturar = (Button)findViewById(R.id.capturar);
         listar = (Button)findViewById(R.id.listar);
         
