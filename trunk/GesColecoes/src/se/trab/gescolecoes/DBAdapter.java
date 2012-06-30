@@ -162,7 +162,7 @@ public class DBAdapter {
     
     public Cursor getItemById(int id){
     	
-    	return db.query("item", new String[]{"_id", "tipo"}, "_id=?" , new String[]{"id"} , null, null, null);
+    	return db.query(true, "item", new String[]{"_id", "tipo", "titulo", "autor", "editor", "ano_pub", "edicao", "ext_tipo", "obs_pess"}, "_id="+id ,null, null, null, null, null);
     				
     }
     
