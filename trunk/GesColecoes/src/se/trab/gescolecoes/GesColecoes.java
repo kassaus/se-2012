@@ -36,8 +36,8 @@ public class GesColecoes extends Activity {
         bd = new DBAdapter(this);
         bd.open();
     	
-    	Intent login = new Intent(this,Login.class);  
-        startActivityForResult(login, 0);
+//    	Intent login = new Intent(this,Login.class);  
+//        startActivityForResult(login, 0);
      
 		capturar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
