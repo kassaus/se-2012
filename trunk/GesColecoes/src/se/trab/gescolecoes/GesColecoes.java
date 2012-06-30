@@ -251,31 +251,27 @@ public class GesColecoes extends Activity {
 		
 		TextView idItem = (TextView)findViewById(R.id.id_item);
 		TextView type = (TextView)findViewById(R.id.type);
-//		TextView idItem = (TextView)findViewById(R.id.id_item);
-//		TextView idItem = (TextView)findViewById(R.id.id_item);
-//		TextView idItem = (TextView)findViewById(R.id.id_item);
-
-//		String from[] = new String[] { "_id", "tipo", "titulo",
-//				"autor", "editor", "ano_pub", "edicao", "ext_tipo",
-//				"obs_pess" };
-//
-//		int to[] = new int[] { R.id.id_item, R.id.type, R.id.title,
-//				R.id.author, R.id.editor, R.id.year, R.id.edition,
-//				R.id.ext_type, R.id.obs_pess };
-
-//		Cursor cursor = bd.getItem("_id", Integer.toString(i));
-		
+		TextView title = (TextView)findViewById(R.id.title);
+		TextView author = (TextView)findViewById(R.id.author);
+		TextView editor = (TextView)findViewById(R.id.editor);
+		TextView year = (TextView)findViewById(R.id.year);
+		TextView edition = (TextView)findViewById(R.id.edition);
+		TextView ext_type = (TextView)findViewById(R.id.ext_type);
+		TextView obs_pess = (TextView)findViewById(R.id.obs_pess);		
+	
 		Cursor cursor = bd.getItemById(i);
 		cursor.moveToFirst();
 		
 		idItem.setText(cursor.getString(cursor.getColumnIndex("_id")));
-
 		type.setText(cursor.getString(cursor.getColumnIndex("tipo")));
-		
-		
-//		SimpleCursorAdapter detail; 
-//				
-//		detail = new SimpleCursorAdapter(this, R.layout.detail, cursor, from, to);
+		title.setText(cursor.getString(cursor.getColumnIndex("titulo")));
+		author.setText(cursor.getString(cursor.getColumnIndex("autor")));
+		editor.setText(cursor.getString(cursor.getColumnIndex("editor")));
+		year.setText(cursor.getString(cursor.getColumnIndex("ano_pub")));
+		edition.setText(cursor.getString(cursor.getColumnIndex("edicao")));
+		ext_type.setText(cursor.getString(cursor.getColumnIndex("ext_tipo")));
+		obs_pess.setText(cursor.getString(cursor.getColumnIndex("obs_pess")));
+
 		
 		
 
