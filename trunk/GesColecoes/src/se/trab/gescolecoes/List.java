@@ -3,6 +3,7 @@ package se.trab.gescolecoes;
 import android.app.Activity;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -11,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class List extends Activity {
 
@@ -60,6 +62,7 @@ public class List extends Activity {
 		setContentView(R.layout.detail);
 
 		Button back = (Button) findViewById(R.id.back);
+		Button backSistema = (Button)findViewById(R.id.back_button);
 		
 		TextView idItem = (TextView)findViewById(R.id.id_item);
 		TextView type = (TextView)findViewById(R.id.type);
@@ -79,6 +82,24 @@ public class List extends Activity {
 		
 		idItem.setText(cursor.getString(0));
 		type.setText(cursor.getString(1));
+		
+		final String contents = "teste";
+		
+	  	backSistema.setOnClickListener(new View.OnClickListener() {
+				public void onClick(View v) {
+					mostraLista();
+					
+
+				}
+
+	
+			});
+	  	
+	  	back.setOnClickListener(new View.OnClickListener() {
+				public void onClick(View v) {
+					mostraLista();
+				}
+			});
 		
 		
 //		SimpleCursorAdapter detail; 

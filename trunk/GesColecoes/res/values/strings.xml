@@ -25,4 +25,7 @@
     <string name="barCode">Código de barras</string>
     <string name="readList">Ler lista</string>
     <string name="exit">Sair</string>
+    <string name="idItem">Id do Item</string>
+    <string name="idCollection">Id da coleção</string>
+    <string name="edition">Edição</string>
 </resources>

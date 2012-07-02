@@ -19,8 +19,7 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/idItem"
-            android:textStyle="bold" />
+            android:text="@string/idItem" />
 
         <TextView
             android:id="@+id/id_item"
@@ -31,8 +30,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/idCollection"
-            android:textStyle="bold" />
+            android:text="@string/idCollection" />
 
         <TextView
             android:id="@+id/id_collection"
@@ -43,8 +41,7 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/type"
-            android:textStyle="bold" />
+            android:text="@string/type" />
 
         <TextView
             android:id="@+id/type"
@@ -55,8 +52,7 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/title"
-            android:textStyle="bold" />
+            android:text="@string/title" />
 
         <TextView
             android:id="@+id/title"
@@ -67,8 +63,7 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/author"
-            android:textStyle="bold" />
+            android:text="@string/author" />
 
         <TextView
             android:id="@+id/author"
@@ -79,8 +74,7 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/editor"
-            android:textStyle="bold" />
+            android:text="@string/editor" />
 
         <TextView
             android:id="@+id/editor"
@@ -91,8 +85,7 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/edition"
-            android:textStyle="bold" />
+            android:text="@string/edition" />
 
         <TextView
             android:id="@+id/edition"
@@ -103,8 +96,7 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/editionYear"
-            android:textStyle="bold" />
+            android:text="@string/editionYear" />
 
         <TextView
             android:id="@+id/editionYear"

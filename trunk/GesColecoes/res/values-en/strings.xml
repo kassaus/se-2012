@@ -25,4 +25,7 @@
     <string name="barCode">Barcode</string>
     <string name="readList">Read list</string>
     <string name="exit">Exit</string>
+    <string name="idItem">Item id</string>
+    <string name="idCollection">Collection Id</string>
+    <string name="edition">Edition</string>
 </resources>

@@ -129,8 +129,9 @@ public class DBAdapter {
 	public Cursor getItemById(int id) {
 
 		return db.query(true, "item",
-				new String[] { "_id", "tipo", "titulo", "autor", "editor",
-						"ano_pub", "edicao", "ext_tipo", "obs_pess" }, "_id="
+				new String[] {  "_id", "tipo", "titulo",
+				"autor", "editor", "ano_pub", "edicao", "qrcode", "barcode",
+				"ext_tipo", "obs_pess", "id_coll" }, "_id="
 						+ id, null, null, null, null, null);
 
 	}
