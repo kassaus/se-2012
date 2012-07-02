@@ -262,6 +262,12 @@ public class GesColecoes extends Activity {
 				mostraDetalhe(i);
 			}
 		});
+		
+		voltar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				ecranInicial();
+			}
+		});
 
 	}
 
