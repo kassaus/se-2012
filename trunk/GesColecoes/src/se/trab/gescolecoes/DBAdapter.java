@@ -1,4 +1,4 @@
-package se.trab.gescolecoes;
+package se.trab.gescolecoes; 
 
 import android.content.ContentValues;
 import android.content.Context;
