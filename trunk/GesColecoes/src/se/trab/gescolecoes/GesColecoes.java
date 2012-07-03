@@ -150,11 +150,15 @@ public class GesColecoes extends Activity {
 		if (resultCode == RESULT_OK) {
 			final String contents = intent.getStringExtra("SCAN_RESULT");
 			String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
-			// Handle successful scan
-			Toast toast = Toast.makeText(this, "Content:" + contents
-					+ " Format:" + format, Toast.LENGTH_LONG);
-			toast.setGravity(Gravity.TOP, 25, 400);
-			toast.show();
+			
+			
+//			// Handle successful scan
+//			Toast toast = Toast.makeText(this, "Content:" + contents
+//					+ " Format:" + format, Toast.LENGTH_LONG);
+//			toast.setGravity(Gravity.TOP, 25, 400);
+//			toast.show();
+//			
+			
 
 			if (format.contains("QR_CODE")) {
 
@@ -162,7 +166,6 @@ public class GesColecoes extends Activity {
 				if (cqr.getCount() > 0) {
 					mostraCaptura1(cqr, contents, format);
 				}
-				// Gerar JSON para QRCODE
 			} else// Os barcodes podem ter varios tipos de especificação e o
 					// formato identifica-os
 			{
@@ -170,7 +173,6 @@ public class GesColecoes extends Activity {
 				if (ccb.getCount() > 0) {
 					mostraCaptura1(ccb, contents, format);
 				}
-				// Gerar JSON para BARCODE
 			}
 
 			mostraCaptura1(null, contents, format);
@@ -205,7 +207,7 @@ public class GesColecoes extends Activity {
 
 		} else if (resultCode == RESULT_CANCELED) {
 			// Handle cancel
-			Toast toast = Toast.makeText(this, "Scan was Cancelled!",
+			Toast toast = Toast.makeText(this, "@string/scanCancelled" ,
 					Toast.LENGTH_LONG);
 			toast.setGravity(Gravity.TOP, 25, 400);
 			toast.show();
@@ -269,6 +271,13 @@ public class GesColecoes extends Activity {
 		Button descartar = (Button) findViewById(R.id.descartar);
 		Button adicionar = (Button) findViewById(R.id.adicionar);
 		
+		TextView tipo = (TextView)findViewById(R.id.tipo);
+		TextView titulo = (TextView)findViewById(R.id.titulo);
+		TextView autor = (TextView)findViewById(R.id.autor);
+		TextView anoPub = (TextView)findViewById(R.id.anoPub);
+		TextView edicao = (TextView)findViewById(R.id.edicao);
+		TextView editor = (TextView)findViewById(R.id.editor);
+		
 		
 		//final Item item = null;
 		//TODO apagar o de teste e colocar o de cima
@@ -276,6 +285,13 @@ public class GesColecoes extends Activity {
 		final Item item = new Item("Filme", "Senhor dos Aneis - A Irmandade do Anel",
 				"autor1", "editor1", "2001", "1a", "qrcode", " ", "DVD",
 				"Edição Colecionador Autografada", 1);
+			
+		tipo.setText(item.tipo + " " + item.ext_tipo);
+		titulo.setText(item.titulo);
+		autor.setText(item.autor);
+		anoPub.setText(item.ano_pub.toString());
+		edicao.setText(item.edicao);
+		editor.setText(item.editor);
 		
 		
 		//procurar no servidor pelo codigo, verificar nisso se temos rede
@@ -286,8 +302,6 @@ public class GesColecoes extends Activity {
 		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author, R.id.anoPub, R.id.edicao, R.id.obs_pess};
 		
 		//agora get items do servidor
-		
-		
 		//procurar o fuzzy search, se existirem similares, apresentar	
 		//o cursor agora tem de ser da tabela similar
 		

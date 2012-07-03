@@ -31,4 +31,5 @@
     <string name="discard">Descartar</string>
     <string name="add">Adicionar</string>
     <string name="insertObservations">Insira (se desejar) observações</string>
+    <string name="scanCancelled">Scan cancelado</string>
 </resources>

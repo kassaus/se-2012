@@ -58,9 +58,9 @@ public final class R {
     }
     public static final class id {
         public static final int adicionar=0x7f08000d;
-        public static final int anoPub=0x7f080015;
+        public static final int anoPub=0x7f080016;
         public static final int ano_pub=0x7f080045;
-        public static final int author=0x7f08001e;
+        public static final int author=0x7f08001f;
         /**  Messages IDs 
          */
         public static final int auto_focus=0x7f080000;
@@ -80,32 +80,32 @@ public final class R {
         public static final int decode_succeeded=0x7f080003;
         public static final int descartar=0x7f08000e;
         public static final int done_button=0x7f080041;
-        public static final int edicao=0x7f080016;
+        public static final int edicao=0x7f080017;
         public static final int edition=0x7f080020;
         public static final int editionYear=0x7f080021;
-        public static final int editor=0x7f08001f;
+        public static final int editor=0x7f080015;
         public static final int encode_view=0x7f08003d;
         public static final int format_text_view=0x7f080027;
         public static final int format_text_view_label=0x7f080026;
         public static final int help_contents=0x7f08003f;
         public static final int history_detail=0x7f080043;
         public static final int history_title=0x7f080042;
-        public static final int id_collection=0x7f08001b;
-        public static final int id_item=0x7f08001a;
+        public static final int id_collection=0x7f08001c;
+        public static final int id_item=0x7f08001b;
         public static final int image_view=0x7f08003e;
-        public static final int insObsTxt=0x7f080019;
+        public static final int insObsTxt=0x7f08001a;
         public static final int launch_product_query=0x7f080004;
         public static final int linearBaixo=0x7f08000c;
         public static final int linearCima=0x7f08000f;
         public static final int lista=0x7f080046;
         public static final int listaIguais=0x7f080011;
-        public static final int listaSimilares=0x7f080017;
+        public static final int listaSimilares=0x7f080018;
         public static final int listar=0x7f08004c;
         public static final int login=0x7f080049;
         public static final int logo=0x7f08004a;
         public static final int meta_text_view=0x7f08002d;
         public static final int meta_text_view_label=0x7f08002c;
-        public static final int obsTxt=0x7f080018;
+        public static final int obsTxt=0x7f080019;
         public static final int obs_pess=0x7f080044;
         public static final int observations=0x7f08003c;
         public static final int page_number_view=0x7f080050;
@@ -142,9 +142,9 @@ public final class R {
         public static final int time_text_view=0x7f08002b;
         public static final int time_text_view_label=0x7f08002a;
         public static final int tipo=0x7f080012;
-        public static final int title=0x7f08001d;
+        public static final int title=0x7f08001e;
         public static final int titulo=0x7f080013;
-        public static final int type=0x7f08001c;
+        public static final int type=0x7f08001d;
         public static final int type_text_view=0x7f080029;
         public static final int type_text_view_label=0x7f080028;
         public static final int user=0x7f080047;
@@ -320,6 +320,7 @@ public final class R {
         public static final int result_uri=0x7f09006f;
         public static final int result_wifi=0x7f090070;
         public static final int sbc_name=0x7f090071;
+        public static final int scanCancelled=0x7f090096;
         public static final int share_name=0x7f090072;
         public static final int title=0x7f090087;
         public static final int title_about=0x7f090073;
