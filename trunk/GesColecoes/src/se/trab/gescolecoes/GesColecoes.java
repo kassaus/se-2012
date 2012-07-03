@@ -44,9 +44,7 @@ public class GesColecoes extends Activity {
 
 		// Intent login = new Intent(this,Login.class);
 		// startActivityForResult(login, 0);
-
 		ecranInicial();
-
 	}
 
 	public void ecranInicial() {
@@ -115,7 +113,6 @@ public class GesColecoes extends Activity {
 	}
 
 	public void listarItems() {
-		// Toast.makeText(this, "VAMOS LISTAR", Toast.LENGTH_SHORT).show();
 		mostraLista();
 	}
 
@@ -154,14 +151,15 @@ public class GesColecoes extends Activity {
 					+ " Format:" + format, Toast.LENGTH_LONG);
 			toast.setGravity(Gravity.TOP, 25, 400);
 			toast.show();
-			
-			mostraCaptura1();
+
+//			mostraCaptura1();
 
 			if (format.contains("QR_CODE")) {
 
 				Cursor cqr = bd.getItem("qrcode", contents);
 				if (cqr.getCount() > 0) {
 					// mostrar resultados
+					mostraCaptura1(cqr, contents, format);
 				}
 				// Gerar JSON para QRCODE
 			} else// Os barcodes podem ter varios tipos de especificação e o
@@ -170,10 +168,12 @@ public class GesColecoes extends Activity {
 				Cursor ccb = bd.getItem("barcode", contents);
 				if (ccb.getCount() > 0) {
 					// mostrar resultados
+					mostraCaptura1(ccb, contents, format);
 				}
 				// Gerar JSON para BARCODE
 			}
 
+			mostraCaptura1(null, contents, format);
 			// Enviar pedido de consulta de dados ao servidor
 
 			// Recolher Resposta
@@ -229,133 +229,240 @@ public class GesColecoes extends Activity {
 	}// trataResultadoActivityScan (fim)
 
 	
-	
-	private void mostraCaptura1() {
+	private void mostraCaptura1(Cursor cqr, String contents, String format) {
 		setContentView(R.layout.captura1);
 		ListView lista = (ListView) findViewById(R.id.listaIguais);
-		TextView codigo = (TextView)findViewById(R.id.codigo);
-		Button descartar = (Button)findViewById(R.id.descartar);
-		Button adicionar = (Button)findViewById(R.id.adicionar);
+		TextView codigo = (TextView) findViewById(R.id.codigo);
+		Button descartar = (Button) findViewById(R.id.descartar);
+		Button adicionar = (Button) findViewById(R.id.adicionar);
 		
-		codigo.setText("Teste código");
+		final String _contents = contents;
+		final String _format = format;
+
+		codigo.setText("Codigo lido: " + contents);
+	
 		
-		String[] from = new String[] { "_id", "tipo", "titulo", "autor" };
-		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author };
+		
+		if (cqr !=  null && cqr.getCount()>0 ){
+			
+		String[] from = new String[] { "_id", "tipo", "titulo", "autor", "obs_pess" };
+		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author, R.id.obsTxt };
 
-		Cursor cursor = bd.getItems();
-
+//		Cursor cursor = bd.getItems();
 
 		SimpleCursorAdapter listaItens = new SimpleCursorAdapter(this,
-				R.layout.item, cursor, from, to);
+				R.layout.item_igual, cqr, from, to);
 
 		listaItens.notifyDataSetChanged();
 
 		lista.setAdapter(listaItens);
 
-		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
+//		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//			public void onItemClick(AdapterView<?> parent, View view,
+//					int position, long id) {
+//
+//				int i = Integer.parseInt(((TextView) ((LinearLayout) view)
+//						.getChildAt(0)).getText().toString());
+//				mostraDetalhe(i);
+//			}
+//		});
 
-				int i = Integer.parseInt(((TextView) ((LinearLayout) view)
-						.getChildAt(0)).getText().toString());
-				mostraDetalhe(i);
-			}
-		});
+		}
 		
-
+		
 		descartar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				ecranInicial();
 			}
 		});
-		
+
 		adicionar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-				mostraCaptura2();
+				mostraCaptura2(_contents, _format);
 			}
 		});
 		
-		
-		
 	}
+
 	
-	private void mostraCaptura2() {
+	
+	
+	
+	private void mostraCaptura2(String contents, String format) {
+
 		setContentView(R.layout.captura2);
 		ListView lista = (ListView) findViewById(R.id.listaSimilares);
-		Button descartar = (Button)findViewById(R.id.descartar);
-		Button adicionar = (Button)findViewById(R.id.adicionar);
+		Button descartar = (Button) findViewById(R.id.descartar);
+		Button adicionar = (Button) findViewById(R.id.adicionar);
+		
+
+		//procurar no servidor pelo codigo, verificar nisso se temos rede
+		
+		
+
+		String[] from = new String[] { "_id", "tipo", "titulo", "autor", "ano_pub", "edicao" };
+		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author, R.id.anoPub, R.id.edicao};
 
 		
-		String[] from = new String[] { "_id", "tipo", "titulo", "autor" };
-		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author };
-
+		
+		//agora get items do servidor
+		
+		
+		//procurar o fuzzy search, se existirem similares, apresentar	
+		//o cursor agora tem de ser da tabela similar
 		Cursor cursor = bd.getItems();
-
+		
 		SimpleCursorAdapter listaItens = new SimpleCursorAdapter(this,
 				R.layout.item, cursor, from, to);
 
 		listaItens.notifyDataSetChanged();
 
 		lista.setAdapter(listaItens);
+//
+//		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//			public void onItemClick(AdapterView<?> parent, View view,
+//					int position, long id) {
+//
+//				int i = Integer.parseInt(((TextView) ((LinearLayout) view)
+//						.getChildAt(0)).getText().toString());
+//				mostraDetalhe(i);
+//			}
+//		});
 
-		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
-
-				int i = Integer.parseInt(((TextView) ((LinearLayout) view)
-						.getChildAt(0)).getText().toString());
-				mostraDetalhe(i);
-			}
-		});
-		
 		descartar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				ecranInicial();
 			}
 		});
-		
+
 		adicionar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				mostraCaptura3();
 			}
 		});
-		
+
 		
 	}
 	
-
 	
 	
-	private void mostraCaptura3() {
-		setContentView(R.layout.captura3);
-		Button descartar = (Button)findViewById(R.id.descartar);
-		Button adicionar = (Button)findViewById(R.id.adicionar);
-		EditText obsInsTxt = (EditText)findViewById(R.id.insObsTxt);
+	
+	
+	
+	
+	//antiga, sem parametros
+	//TODO retirar depois
+	private void mostraCaptura1() {
+		setContentView(R.layout.captura1);
+		ListView lista = (ListView) findViewById(R.id.listaIguais);
+		TextView codigo = (TextView) findViewById(R.id.codigo);
+		Button descartar = (Button) findViewById(R.id.descartar);
+		Button adicionar = (Button) findViewById(R.id.adicionar);
 
-		
+		codigo.setText("Teste código");
+
+		String[] from = new String[] { "_id", "tipo", "titulo", "autor" };
+		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author };
+
+		Cursor cursor = bd.getItems();
+
+		SimpleCursorAdapter listaItens = new SimpleCursorAdapter(this,
+				R.layout.item, cursor, from, to);
+
+		listaItens.notifyDataSetChanged();
+
+		lista.setAdapter(listaItens);
+
+		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+
+				int i = Integer.parseInt(((TextView) ((LinearLayout) view)
+						.getChildAt(0)).getText().toString());
+				mostraDetalhe(i);
+			}
+		});
+
 		descartar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				ecranInicial();
 			}
 		});
-		
+
 		adicionar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
-	
+				mostraCaptura2();
 			}
 		});
-		
-		
+
 	}
-	
-	
-	
+
+	private void mostraCaptura2() {
+		setContentView(R.layout.captura2);
+		ListView lista = (ListView) findViewById(R.id.listaSimilares);
+		Button descartar = (Button) findViewById(R.id.descartar);
+		Button adicionar = (Button) findViewById(R.id.adicionar);
+
+		String[] from = new String[] { "_id", "tipo", "titulo", "autor" };
+		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author };
+
+		Cursor cursor = bd.getItems();
+
+		SimpleCursorAdapter listaItens = new SimpleCursorAdapter(this,
+				R.layout.item, cursor, from, to);
+
+		listaItens.notifyDataSetChanged();
+
+		lista.setAdapter(listaItens);
+
+		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+
+				int i = Integer.parseInt(((TextView) ((LinearLayout) view)
+						.getChildAt(0)).getText().toString());
+				mostraDetalhe(i);
+			}
+		});
+
+		descartar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				ecranInicial();
+			}
+		});
+
+		adicionar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				mostraCaptura3();
+			}
+		});
+
+	}
+
+	private void mostraCaptura3() {
+		setContentView(R.layout.captura3);
+		Button descartar = (Button) findViewById(R.id.descartar);
+		Button adicionar = (Button) findViewById(R.id.adicionar);
+		EditText obsInsTxt = (EditText) findViewById(R.id.insObsTxt);
+
+		descartar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				ecranInicial();
+			}
+		});
+
+		adicionar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+
+			}
+		});
+
+	}
 
 	public void mostraLista() {
 		setContentView(R.layout.lista);
 		Button voltar = (Button) findViewById(R.id.back);
 		ListView lista = (ListView) findViewById(R.id.lista);
-		
 
 		String[] from = new String[] { "_id", "tipo", "titulo", "autor" };
 		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author };
@@ -392,7 +499,7 @@ public class GesColecoes extends Activity {
 				mostraDetalhe(i);
 			}
 		});
-		
+
 		voltar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				ecranInicial();
@@ -435,7 +542,8 @@ public class GesColecoes extends Activity {
 			obs_pess.setText(cursor.getString(cursor.getColumnIndex("obs_pess")));
 		}
 
-		idCollection.setText(cursor.getString(cursor.getColumnIndex("id_coll")));
+		idCollection
+				.setText(cursor.getString(cursor.getColumnIndex("id_coll")));
 
 		// backSistema.setOnClickListener(new View.OnClickListener() {
 		// public void onClick(View v) {
@@ -451,34 +559,30 @@ public class GesColecoes extends Activity {
 		});
 
 	}
+
 	
-	
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_principal , menu);
-        return true;
-    }
-    
-    @Override
-    public  boolean onOptionsItemSelected(MenuItem item) {
-    	switch (item.getItemId()) {
-    	case R.id.backup:
-//    		doBackup();
-    		return true;
-    	case R.id.restore:
-//    		doRestore();
-    		return true;
-    	case R.id.sair:	
-            finish();
-    		return true;
+	//Menu de opções (botão esquerdo)
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.menu_principal, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.backup:
+			// doBackup();
+			return true;
+		case R.id.restore:
+			// doRestore();
+			return true;
+		case R.id.sair:
+			super.finish();
+			return true;
 		default:
-			return super.onOptionsItemSelected(item);    
-    	}
-    }
-	
-	
-	
-	
-	
+			return super.onOptionsItemSelected(item);
+		}
+	}
 
 }

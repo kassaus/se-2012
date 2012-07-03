@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
@@ -6,8 +7,8 @@
         android:id="@+id/linearBaixo"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" 
-		android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
 
         <Button
             android:id="@+id/adicionar"
@@ -22,29 +23,26 @@
             android:layout_height="wrap_content"
             android:background="@drawable/botao3"
             android:text="@string/discard" />
-
     </LinearLayout>
 
-    <LinearLayout 
-         android:id="@+id/linearCima"
+    <LinearLayout
+        android:id="@+id/linearCima"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" 
-        android:layout_above="@+id/linearBaixo">
-
+        android:layout_above="@+id/linearBaixo"
+        android:orientation="vertical" >
+
         <TextView
             android:id="@+id/codigo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
- />
-
+            android:textSize="18sp" />
+
         <ListView
             android:id="@+id/listaIguais"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" >
-
         </ListView>
-
-     </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>
