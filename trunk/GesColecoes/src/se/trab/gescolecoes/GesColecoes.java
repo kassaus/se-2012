@@ -11,9 +11,13 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -150,6 +154,8 @@ public class GesColecoes extends Activity {
 					+ " Format:" + format, Toast.LENGTH_LONG);
 			toast.setGravity(Gravity.TOP, 25, 400);
 			toast.show();
+			
+			mostraCaptura1();
 
 			if (format.contains("QR_CODE")) {
 
@@ -222,10 +228,134 @@ public class GesColecoes extends Activity {
 		}
 	}// trataResultadoActivityScan (fim)
 
+	
+	
+	private void mostraCaptura1() {
+		setContentView(R.layout.captura1);
+		ListView lista = (ListView) findViewById(R.id.listaIguais);
+		TextView codigo = (TextView)findViewById(R.id.codigo);
+		Button descartar = (Button)findViewById(R.id.descartar);
+		Button adicionar = (Button)findViewById(R.id.adicionar);
+		
+		codigo.setText("Teste código");
+		
+		String[] from = new String[] { "_id", "tipo", "titulo", "autor" };
+		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author };
+
+		Cursor cursor = bd.getItems();
+
+
+		SimpleCursorAdapter listaItens = new SimpleCursorAdapter(this,
+				R.layout.item, cursor, from, to);
+
+		listaItens.notifyDataSetChanged();
+
+		lista.setAdapter(listaItens);
+
+		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+
+				int i = Integer.parseInt(((TextView) ((LinearLayout) view)
+						.getChildAt(0)).getText().toString());
+				mostraDetalhe(i);
+			}
+		});
+		
+
+		descartar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				ecranInicial();
+			}
+		});
+		
+		adicionar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				mostraCaptura2();
+			}
+		});
+		
+		
+		
+	}
+	
+	private void mostraCaptura2() {
+		setContentView(R.layout.captura2);
+		ListView lista = (ListView) findViewById(R.id.listaSimilares);
+		Button descartar = (Button)findViewById(R.id.descartar);
+		Button adicionar = (Button)findViewById(R.id.adicionar);
+
+		
+		String[] from = new String[] { "_id", "tipo", "titulo", "autor" };
+		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author };
+
+		Cursor cursor = bd.getItems();
+
+		SimpleCursorAdapter listaItens = new SimpleCursorAdapter(this,
+				R.layout.item, cursor, from, to);
+
+		listaItens.notifyDataSetChanged();
+
+		lista.setAdapter(listaItens);
+
+		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+
+				int i = Integer.parseInt(((TextView) ((LinearLayout) view)
+						.getChildAt(0)).getText().toString());
+				mostraDetalhe(i);
+			}
+		});
+		
+		descartar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				ecranInicial();
+			}
+		});
+		
+		adicionar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				mostraCaptura3();
+			}
+		});
+		
+		
+	}
+	
+
+	
+	
+	private void mostraCaptura3() {
+		setContentView(R.layout.captura3);
+		Button descartar = (Button)findViewById(R.id.descartar);
+		Button adicionar = (Button)findViewById(R.id.adicionar);
+		EditText obsInsTxt = (EditText)findViewById(R.id.insObsTxt);
+
+		
+		descartar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				ecranInicial();
+			}
+		});
+		
+		adicionar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+	
+			}
+		});
+		
+		
+	}
+	
+	
+	
+
 	public void mostraLista() {
 		setContentView(R.layout.lista);
 		Button voltar = (Button) findViewById(R.id.back);
 		ListView lista = (ListView) findViewById(R.id.lista);
+		
 
 		String[] from = new String[] { "_id", "tipo", "titulo", "autor" };
 		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author };
@@ -321,5 +451,34 @@ public class GesColecoes extends Activity {
 		});
 
 	}
+	
+	
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_principal , menu);
+        return true;
+    }
+    
+    @Override
+    public  boolean onOptionsItemSelected(MenuItem item) {
+    	switch (item.getItemId()) {
+    	case R.id.backup:
+//    		doBackup();
+    		return true;
+    	case R.id.restore:
+//    		doRestore();
+    		return true;
+    	case R.id.sair:	
+            finish();
+    		return true;
+		default:
+			return super.onOptionsItemSelected(item);    
+    	}
+    }
+	
+	
+	
+	
+	
 
 }

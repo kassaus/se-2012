@@ -28,4 +28,7 @@
     <string name="idItem">Id do Item</string>
     <string name="idCollection">Id da coleção</string>
     <string name="edition">Edição</string>
+    <string name="discard">Descartar</string>
+    <string name="add">Adicionar</string>
+    <string name="insertObservations">Insira (se desejar) observações</string>
 </resources>
