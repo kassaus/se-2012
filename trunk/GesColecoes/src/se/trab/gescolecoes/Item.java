@@ -3,6 +3,8 @@ package se.trab.gescolecoes;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.text.Editable;
+
 public class Item {
     public String tipo; 
     public String titulo; 
@@ -45,17 +47,26 @@ public class Item {
     
     public Item ( JSONObject object){
     	try {
-			this.tipo=object.getString("tipo");
+    		//{"nomeEditor":"Editor1",
+//    		"titulo":"Teste",
+//    		"edicao":5,
+//    		"qrcode":"1234567890",
+//    		"idItem":1,
+//    		"barcode":"1234567890                                        ",
+//    		"ano":2010,
+//    		"desTipoItem":"Livro",
+//    		"desExpTipoItem":"Livros Capa dura"}
+			this.tipo=object.getString("desTipoItem");
 	    	this.titulo=object.getString("titulo"); 
-	    	this.autor=object.getString("autor");
-	    	this.editor=object.getString("editor");
-	    	this.ano_pub=object.getString("ano_pub");
-	    	this.edicao=object.getString("edicao");
+	    	this.autor=object.getString("autores");
+	    	this.editor=object.getString("nomeEditor");
+	    	this.ano_pub=String.valueOf(object.getInt("ano"));
+	    	this.edicao=String.valueOf(object.getInt("edicao"));
 	    	this.qrcode=object.getString("qrcode");
 	    	this.barcode=object.getString("barcode");
-	    	this.ext_tipo=object.getString("ext_tipo");
-	    	this.obs_pess=object.getString("obs_pess");
-	    	this.id_coll=object.getInt("id_coll");
+	    	this.ext_tipo=object.getString("desExpTipoItem");
+	    	//this.obs_pess=object.getString("obs_pess");
+	    	//this.id_coll=object.getInt("id_coll");
     	} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

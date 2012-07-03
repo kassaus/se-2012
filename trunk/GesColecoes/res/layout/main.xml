@@ -11,14 +11,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:fitsSystemWindows="true" >
-
+
         <ImageView
             android:id="@+id/logo"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:maxHeight="250px"
-            android:maxWidth="250px"
-            android:paddingBottom="150px"
+            android:maxHeight="250dp"
+            android:maxWidth="250dp"
+            android:paddingBottom="150dp"
             android:scaleType="fitCenter"
             android:src="@drawable/logo_1" />
 

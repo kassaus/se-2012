@@ -10,12 +10,10 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="12sp"
-        android:visibility="gone"
-     />
+        android:visibility="gone" />
 
-    <!--    android:visibility="gone" --> 
-    
-    
+    <!-- android:visibility="gone" -->
+
     <TextView
         android:id="@+id/type"
         android:layout_width="fill_parent"
@@ -26,17 +24,30 @@
         android:id="@+id/title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/author"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="16sp" />
-    
-        <TextView
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ano_pub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/edition"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/obs_pess"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

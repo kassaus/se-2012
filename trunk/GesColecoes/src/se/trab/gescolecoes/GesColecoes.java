@@ -5,10 +5,14 @@ import se.trab.gescolecoes.R;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
@@ -152,13 +156,10 @@ public class GesColecoes extends Activity {
 			toast.setGravity(Gravity.TOP, 25, 400);
 			toast.show();
 
-//			mostraCaptura1();
-
 			if (format.contains("QR_CODE")) {
 
 				Cursor cqr = bd.getItem("qrcode", contents);
 				if (cqr.getCount() > 0) {
-					// mostrar resultados
 					mostraCaptura1(cqr, contents, format);
 				}
 				// Gerar JSON para QRCODE
@@ -167,7 +168,6 @@ public class GesColecoes extends Activity {
 			{
 				Cursor ccb = bd.getItem("barcode", contents);
 				if (ccb.getCount() > 0) {
-					// mostrar resultados
 					mostraCaptura1(ccb, contents, format);
 				}
 				// Gerar JSON para BARCODE
@@ -175,32 +175,16 @@ public class GesColecoes extends Activity {
 
 			mostraCaptura1(null, contents, format);
 			// Enviar pedido de consulta de dados ao servidor
-
 			// Recolher Resposta
-
 			// Recolhe todos os items
-			Cursor c = bd.getItems();
-
-			FuzzySearch fz = new FuzzySearch();
-
-			// Fazer Busca no resultado pelos dados Nome Autor editor
-
-			// TESTE FUZZYSEARCH
-			String str = "Irma Dadé - Anel de Sangue";
-
-			fz.testeArrayStrings(c, str);
+//			Cursor c = bd.getItems();
 			// FIM TESTE
-
-			// Apresentar resultados se houver
-
+		// Apresentar resultados se houver
 			// Toast.makeText(this, "VAMOS CAPTURAR",
 			// Toast.LENGTH_SHORT).show();
-
-			c.close();
-
+//			c.close();
 			// pesquisa_livro(contents); substituido pela alert dialog
 			// final CharSequence[] items = {"Inserir", "Pesquisar", "Voltar"};
-
 			// AlertDialog.Builder builder = new AlertDialog.Builder(this);
 			// builder.setTitle("Escolha a opção:"); //Inserir, Pesquisar ou
 			// Voltar
@@ -229,7 +213,7 @@ public class GesColecoes extends Activity {
 	}// trataResultadoActivityScan (fim)
 
 	
-	private void mostraCaptura1(Cursor cqr, String contents, String format) {
+	private void mostraCaptura1(Cursor cursor, String contents, String format) {
 		setContentView(R.layout.captura1);
 		ListView lista = (ListView) findViewById(R.id.listaIguais);
 		TextView codigo = (TextView) findViewById(R.id.codigo);
@@ -239,36 +223,26 @@ public class GesColecoes extends Activity {
 		final String _contents = contents;
 		final String _format = format;
 
-		codigo.setText("Codigo lido: " + contents);
+		codigo.setText("Código "+ contents+" em formato "+ format);
 	
 		
-		
-		if (cqr !=  null && cqr.getCount()>0 ){
-			
-		String[] from = new String[] { "_id", "tipo", "titulo", "autor", "obs_pess" };
-		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author, R.id.obsTxt };
+		//verifica se há items com o mesmo código
+		if (cursor != null && cursor.getCount() > 0) {
 
-//		Cursor cursor = bd.getItems();
+			String[] from = new String[] { "_id", "tipo", "titulo", "autor",
+					"obs_pess" };
+			int[] to = new int[] { R.id.id_item, R.id.type, R.id.title,
+					R.id.author, R.id.obsTxt };
 
-		SimpleCursorAdapter listaItens = new SimpleCursorAdapter(this,
-				R.layout.item_igual, cqr, from, to);
+			// Cursor cursor = bd.getItems();
 
-		listaItens.notifyDataSetChanged();
+			SimpleCursorAdapter listaItens = new SimpleCursorAdapter(this,
+					R.layout.item_igual, cursor, from, to);
 
-		lista.setAdapter(listaItens);
+			listaItens.notifyDataSetChanged();
 
-//		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//			public void onItemClick(AdapterView<?> parent, View view,
-//					int position, long id) {
-//
-//				int i = Integer.parseInt(((TextView) ((LinearLayout) view)
-//						.getChildAt(0)).getText().toString());
-//				mostraDetalhe(i);
-//			}
-//		});
-
+			lista.setAdapter(listaItens);
 		}
-		
 		
 		descartar.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -295,29 +269,132 @@ public class GesColecoes extends Activity {
 		Button descartar = (Button) findViewById(R.id.descartar);
 		Button adicionar = (Button) findViewById(R.id.adicionar);
 		
-
+		
+		//final Item item = null;
+		//TODO apagar o de teste e colocar o de cima
+		//item de teste	
+		final Item item = new Item("Filme", "Senhor dos Aneis - A Irmandade do Anel",
+				"autor1", "editor1", "2001", "1a", "qrcode", " ", "DVD",
+				"Edição Colecionador Autografada", 1);
+		
+		
 		//procurar no servidor pelo codigo, verificar nisso se temos rede
-		
+		//TODO
 		
 
-		String[] from = new String[] { "_id", "tipo", "titulo", "autor", "ano_pub", "edicao" };
-		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author, R.id.anoPub, R.id.edicao};
-
-		
+		String[] from = new String[] { "_id", "tipo", "titulo", "autor", "ano_pub", "edicao", "obs_pess" };
+		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author, R.id.anoPub, R.id.edicao, R.id.obs_pess};
 		
 		//agora get items do servidor
 		
 		
 		//procurar o fuzzy search, se existirem similares, apresentar	
 		//o cursor agora tem de ser da tabela similar
+		
 		Cursor cursor = bd.getItems();
+		FuzzySearch fz = new FuzzySearch();		
+		Cursor cursorFz = fz.GetMatchCursor(cursor, "Ficam os aneis", "autor3, autor 1" );
+	
+		//colocar este depois
+//		Cursor cursorFz = fz.GetMatchCursor(cursor, item.titulo, item.autor );
 		
 		SimpleCursorAdapter listaItens = new SimpleCursorAdapter(this,
-				R.layout.item, cursor, from, to);
-
+				R.layout.item_similar, cursorFz, from, to);
 		listaItens.notifyDataSetChanged();
-
 		lista.setAdapter(listaItens);
+
+		descartar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				ecranInicial();
+			}
+		});
+
+		adicionar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				mostraCaptura3(item);
+			}
+		});
+
+		
+	}
+	
+	
+	
+	private void mostraCaptura3(final Item item) {
+		
+		
+		setContentView(R.layout.captura3_comdetail);
+		Button descartar = (Button) findViewById(R.id.descartar);
+		Button adicionar = (Button) findViewById(R.id.adicionar);
+		EditText obsInsTxt = (EditText) findViewById(R.id.insObsTxt);
+		int intResult;
+		
+		TextView tipo = (TextView)findViewById(R.id.type);
+		TextView titulo = (TextView)findViewById(R.id.title);
+		TextView autor = (TextView)findViewById(R.id.author);
+		TextView editor = (TextView)findViewById(R.id.editor);
+		TextView ano_edicao = (TextView)findViewById(R.id.editionYear);
+		
+		tipo.setText(item.tipo + " " + item.ext_tipo);
+		titulo.setText(item.titulo);
+		autor.setText(item.autor);
+		editor.setText(item.editor);
+		ano_edicao.setText(item.ano_pub);
+		
+
+		descartar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				ecranInicial();
+			}
+		});
+
+		adicionar.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				
+				//item.obs_pess = obsInsTxt.getText(); TODO resolver o problema de não ser editável
+				int insertResult = (int) bd.insertItem(item);
+				//inserir na BD
+				//fazer toast com o resultado
+				makeToast("Inserido registo na BD local com o id " + insertResult);
+				ecranInicial();
+			}
+		});
+
+	}
+	
+	public void makeToast(String texto) {
+		Toast toast = Toast.makeText(this, texto,
+				Toast.LENGTH_LONG);
+		toast.setGravity(Gravity.TOP, 25, 400);
+		toast.show();
+	}
+
+	
+	
+	
+//	
+//	//antiga, sem parametros
+//	//TODO retirar depois
+//	private void mostraCaptura1() {
+//		setContentView(R.layout.captura1);
+//		ListView lista = (ListView) findViewById(R.id.listaIguais);
+//		TextView codigo = (TextView) findViewById(R.id.codigo);
+//		Button descartar = (Button) findViewById(R.id.descartar);
+//		Button adicionar = (Button) findViewById(R.id.adicionar);
+//
+//		codigo.setText("Teste código");
+//
+//		String[] from = new String[] { "_id", "tipo", "titulo", "autor" };
+//		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author };
+//
+//		Cursor cursor = bd.getItems();
+//
+//		SimpleCursorAdapter listaItens = new SimpleCursorAdapter(this,
+//				R.layout.item, cursor, from, to);
+//
+//		listaItens.notifyDataSetChanged();
+//
+//		lista.setAdapter(listaItens);
 //
 //		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //			public void onItemClick(AdapterView<?> parent, View view,
@@ -328,117 +405,66 @@ public class GesColecoes extends Activity {
 //				mostraDetalhe(i);
 //			}
 //		});
+//
+//		descartar.setOnClickListener(new View.OnClickListener() {
+//			public void onClick(View v) {
+//				ecranInicial();
+//			}
+//		});
+//
+//		adicionar.setOnClickListener(new View.OnClickListener() {
+//			public void onClick(View v) {
+//				mostraCaptura2();
+//			}
+//		});
+//
+//	}
+//
+//	private void mostraCaptura2() {
+//		setContentView(R.layout.captura2);
+//		ListView lista = (ListView) findViewById(R.id.listaSimilares);
+//		Button descartar = (Button) findViewById(R.id.descartar);
+//		Button adicionar = (Button) findViewById(R.id.adicionar);
+//
+//		String[] from = new String[] { "_id", "tipo", "titulo", "autor" };
+//		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author };
+//
+//		Cursor cursor = bd.getItems();
+//
+//		SimpleCursorAdapter listaItens = new SimpleCursorAdapter(this,
+//				R.layout.item, cursor, from, to);
+//
+//		listaItens.notifyDataSetChanged();
+//
+//		lista.setAdapter(listaItens);
+//
+//		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//			public void onItemClick(AdapterView<?> parent, View view,
+//					int position, long id) {
+//
+//				int i = Integer.parseInt(((TextView) ((LinearLayout) view)
+//						.getChildAt(0)).getText().toString());
+//				mostraDetalhe(i);
+//			}
+//		});
+//
+//		descartar.setOnClickListener(new View.OnClickListener() {
+//			public void onClick(View v) {
+//				ecranInicial();
+//			}
+//		});
+//
+//		adicionar.setOnClickListener(new View.OnClickListener() {
+//			public void onClick(View v) {
+//				mostraCaptura3();
+//			}
+//		});
+//
+//	}
 
-		descartar.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				ecranInicial();
-			}
-		});
-
-		adicionar.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				mostraCaptura3();
-			}
-		});
-
-		
-	}
 	
 	
 	
-	
-	
-	
-	
-	//antiga, sem parametros
-	//TODO retirar depois
-	private void mostraCaptura1() {
-		setContentView(R.layout.captura1);
-		ListView lista = (ListView) findViewById(R.id.listaIguais);
-		TextView codigo = (TextView) findViewById(R.id.codigo);
-		Button descartar = (Button) findViewById(R.id.descartar);
-		Button adicionar = (Button) findViewById(R.id.adicionar);
-
-		codigo.setText("Teste código");
-
-		String[] from = new String[] { "_id", "tipo", "titulo", "autor" };
-		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author };
-
-		Cursor cursor = bd.getItems();
-
-		SimpleCursorAdapter listaItens = new SimpleCursorAdapter(this,
-				R.layout.item, cursor, from, to);
-
-		listaItens.notifyDataSetChanged();
-
-		lista.setAdapter(listaItens);
-
-		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
-
-				int i = Integer.parseInt(((TextView) ((LinearLayout) view)
-						.getChildAt(0)).getText().toString());
-				mostraDetalhe(i);
-			}
-		});
-
-		descartar.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				ecranInicial();
-			}
-		});
-
-		adicionar.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				mostraCaptura2();
-			}
-		});
-
-	}
-
-	private void mostraCaptura2() {
-		setContentView(R.layout.captura2);
-		ListView lista = (ListView) findViewById(R.id.listaSimilares);
-		Button descartar = (Button) findViewById(R.id.descartar);
-		Button adicionar = (Button) findViewById(R.id.adicionar);
-
-		String[] from = new String[] { "_id", "tipo", "titulo", "autor" };
-		int[] to = new int[] { R.id.id_item, R.id.type, R.id.title, R.id.author };
-
-		Cursor cursor = bd.getItems();
-
-		SimpleCursorAdapter listaItens = new SimpleCursorAdapter(this,
-				R.layout.item, cursor, from, to);
-
-		listaItens.notifyDataSetChanged();
-
-		lista.setAdapter(listaItens);
-
-		lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
-
-				int i = Integer.parseInt(((TextView) ((LinearLayout) view)
-						.getChildAt(0)).getText().toString());
-				mostraDetalhe(i);
-			}
-		});
-
-		descartar.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				ecranInicial();
-			}
-		});
-
-		adicionar.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				mostraCaptura3();
-			}
-		});
-
-	}
-
 	private void mostraCaptura3() {
 		setContentView(R.layout.captura3);
 		Button descartar = (Button) findViewById(R.id.descartar);
@@ -471,20 +497,11 @@ public class GesColecoes extends Activity {
 
 		// R.layout.item,
 
+		
 		SimpleCursorAdapter listaItens = new SimpleCursorAdapter(this,
 				R.layout.item, cursor, from, to);
-		// {
-		// @Override
-		// public View getView(int position, View convertView, ViewGroup parent)
-		// {
-		// final View row = super.getView(position, convertView, parent);
-		// if (position % 2 == 0)
-		// row.setBackgroundResource(android.R.color.darker_gray);
-		// else
-		// row.setBackgroundResource(android.R.color.background_light);
-		// return row; } };
-		//
-		//
+		
+		listaItens.notifyDataSetChanged();
 
 		listaItens.notifyDataSetChanged();
 
