@@ -326,7 +326,7 @@ public class GesColecoes extends Activity {
 		setContentView(R.layout.captura3_comdetail);
 		Button descartar = (Button) findViewById(R.id.descartar);
 		Button adicionar = (Button) findViewById(R.id.adicionar);
-		EditText obsInsTxt = (EditText) findViewById(R.id.insObsTxt);
+		final EditText obsInsTxt = (EditText) findViewById(R.id.insObsTxt);
 		int intResult;
 		
 		TextView tipo = (TextView)findViewById(R.id.type);
@@ -352,6 +352,9 @@ public class GesColecoes extends Activity {
 			public void onClick(View v) {
 				
 				//item.obs_pess = obsInsTxt.getText(); TODO resolver o problema de não ser editável
+				
+				final String obs = obsInsTxt.getText().toString();
+				item.obs_pess = obs;
 				int insertResult = (int) bd.insertItem(item);
 				//inserir na BD
 				//fazer toast com o resultado
