@@ -1,0 +1,598 @@
+2012-07-03 00:01:52,128 [24] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 00:01:52,218 [24] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 00:01:52,228 [24] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 00:01:52,228 [24] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 00:02:27,268 [23] DEBUG GesColecoesWeb.GetViewGeral_ByID - Processing...
+2012-07-03 00:02:27,268 [23] DEBUG GesColecoesWeb.GetViewGeral_ByID - parameterID=1
+2012-07-03 00:02:27,268 [23] DEBUG GesColecoesWeb.GetViewGeral_ByID - ID=1
+2012-07-03 00:02:27,278 [23] INFO  GesColecoesWeb.GetViewGeral_ByID - Row found!
+2012-07-03 00:02:27,283 [23] DEBUG GesColecoesWeb.GetViewGeral_ByID - Finished.
+2012-07-03 00:02:41,743 [21] DEBUG GesColecoesWeb.GetViewGeral_ByID - Processing...
+2012-07-03 00:02:41,743 [21] DEBUG GesColecoesWeb.GetViewGeral_ByID - parameterID=1
+2012-07-03 00:02:41,743 [21] DEBUG GesColecoesWeb.GetViewGeral_ByID - ID=1
+2012-07-03 00:02:41,748 [21] INFO  GesColecoesWeb.GetViewGeral_ByID - Row found!
+2012-07-03 00:02:41,748 [21] DEBUG GesColecoesWeb.GetViewGeral_ByID - Finished.
+2012-07-03 00:03:09,954 [13] DEBUG GesColecoesWeb.GetViewGeral_ByID - Processing...
+2012-07-03 00:03:09,955 [13] DEBUG GesColecoesWeb.GetViewGeral_ByID - parameterID=1
+2012-07-03 00:03:09,955 [13] DEBUG GesColecoesWeb.GetViewGeral_ByID - ID=1
+2012-07-03 00:03:09,955 [13] INFO  GesColecoesWeb.GetViewGeral_ByID - Row found!
+2012-07-03 00:03:09,955 [13] DEBUG GesColecoesWeb.GetViewGeral_ByID - Finished.
+2012-07-03 00:04:00,806 [27] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 00:04:00,806 [27] DEBUG GesColecoesWeb.GetViewGeral - barcode=1
+2012-07-03 00:04:00,841 [27] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 00:04:00,841 [27] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 00:04:09,271 [13] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 00:04:09,271 [13] DEBUG GesColecoesWeb.GetViewGeral - barcode=1234567890
+2012-07-03 00:04:09,271 [13] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 00:04:09,271 [13] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 00:24:13,582 [5] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 01:10:48,596 [1] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 01:10:48,707 [5] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:10:48,707 [5] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 01:10:48,714 [5] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 01:10:49,072 [5] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:10:49,087 [5] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:20:09,808 [24] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:20:09,808 [24] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 01:20:09,817 [24] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:20:09,817 [24] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:20:22,570 [16] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:20:22,570 [16] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 01:20:22,571 [16] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:20:22,571 [16] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:21:05,527 [25] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:21:05,528 [25] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 01:21:05,529 [25] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:21:05,529 [25] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:38:35,850 [40] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:38:35,850 [40] DEBUG GesColecoesWeb.GetViewGeral - qrcode=123457890
+2012-07-03 01:38:35,891 [40] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:38:35,891 [40] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:39:24,308 [40] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:39:24,308 [40] DEBUG GesColecoesWeb.GetViewGeral - qrcode=123457890
+2012-07-03 01:39:24,309 [40] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:39:24,309 [40] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:43:54,467 [36] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:43:54,468 [36] DEBUG GesColecoesWeb.GetViewGeral - qrcode=123457890
+2012-07-03 01:43:54,491 [36] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:43:54,491 [36] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:44:58,446 [41] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:44:58,447 [41] DEBUG GesColecoesWeb.GetViewGeral - qrcode=123457890
+2012-07-03 01:44:58,448 [41] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:44:58,448 [41] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:45:33,745 [41] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:45:33,746 [41] DEBUG GesColecoesWeb.GetViewGeral - barcode=1234567890
+2012-07-03 01:45:33,760 [41] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:45:33,760 [41] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:45:44,353 [44] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:45:44,353 [44] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 01:45:44,367 [44] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:45:44,367 [44] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:45:49,072 [36] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:45:49,072 [36] DEBUG GesColecoesWeb.GetViewGeral - qrcode=123456790
+2012-07-03 01:45:49,073 [36] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:45:49,073 [36] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:45:53,452 [44] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:45:53,452 [44] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 01:45:53,454 [44] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:45:53,454 [44] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:49:15,240 [36] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:49:15,240 [36] DEBUG GesColecoesWeb.GetViewGeral - qrcode=123457890
+2012-07-03 01:49:15,241 [36] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:49:15,241 [36] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:51:56,913 [43] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:51:56,913 [43] DEBUG GesColecoesWeb.GetViewGeral - qrcode=123456790
+2012-07-03 01:51:56,916 [43] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:51:56,916 [43] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:52:03,888 [47] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:52:03,889 [47] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 01:52:03,889 [47] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:52:03,889 [47] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:55:13,902 [49] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:55:13,902 [49] DEBUG GesColecoesWeb.GetViewGeral - qrcode=123457890
+2012-07-03 01:55:13,903 [49] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:55:13,903 [49] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:56:51,690 [41] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:56:51,691 [41] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 01:56:51,691 [41] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:56:51,691 [41] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:59:04,643 [41] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:59:04,644 [41] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 01:59:04,646 [41] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:59:04,646 [41] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 01:59:14,491 [41] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 01:59:14,491 [41] DEBUG GesColecoesWeb.GetViewGeral - qrcode=123457890
+2012-07-03 01:59:14,492 [41] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 01:59:14,492 [41] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 02:00:17,762 [50] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 02:00:17,762 [50] DEBUG GesColecoesWeb.GetViewGeral - qrcode=123457890
+2012-07-03 02:00:17,763 [50] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 02:00:17,763 [50] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 02:04:15,138 [41] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 02:04:15,139 [41] DEBUG GesColecoesWeb.GetViewGeral - qrcode=123457890
+2012-07-03 02:04:15,144 [41] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 02:04:15,144 [41] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 02:04:41,368 [41] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 02:04:41,368 [41] DEBUG GesColecoesWeb.GetViewGeral - qrcode=123457890
+2012-07-03 02:04:41,369 [41] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 02:04:41,369 [41] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 02:04:55,145 [51] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 02:04:55,146 [51] DEBUG GesColecoesWeb.GetViewGeral - qrcode=123457890
+2012-07-03 02:04:55,146 [51] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 02:04:55,147 [51] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 02:05:44,475 [51] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 02:05:44,476 [51] DEBUG GesColecoesWeb.GetViewGeral - qrcode=123457890
+2012-07-03 02:05:44,477 [51] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 02:05:44,477 [51] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 02:10:48,238 [58] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 02:10:48,238 [58] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 02:10:48,244 [58] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 02:10:48,244 [58] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 02:12:35,862 [58] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 02:12:35,862 [58] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 02:12:35,863 [58] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 02:12:35,863 [58] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 02:22:39,451 [65] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 02:22:39,451 [65] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 02:22:39,456 [65] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 02:22:39,457 [65] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 02:28:35,094 [61] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 02:28:35,094 [61] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 02:28:35,100 [61] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 02:28:35,100 [61] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 02:39:15,267 [73] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 02:39:44,411 [5] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 02:39:46,779 [4] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 02:39:49,157 [4] DEBUG GesColecoesWeb.GetViewGeral_ByID - Processing...
+2012-07-03 02:39:49,208 [4] DEBUG GesColecoesWeb.GetViewGeral_ByID - parameterID=
+2012-07-03 02:39:49,209 [4] ERROR GesColecoesWeb.GetViewGeral_ByID - ID field not supplied...
+2012-07-03 02:39:49,209 [4] DEBUG GesColecoesWeb.GetViewGeral_ByID - Finished.
+2012-07-03 02:39:49,323 [5] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 03:32:27,944 [31] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 03:32:45,996 [1] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 03:32:46,374 [5] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 03:32:46,375 [5] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 03:32:46,382 [5] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 03:32:46,487 [5] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 03:32:46,576 [5] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 03:40:33,606 [22] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 03:40:36,680 [30] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 03:40:50,090 [32] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 03:40:50,093 [32] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 03:40:50,107 [32] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 03:40:50,128 [32] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 03:41:10,922 [32] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 03:47:03,724 [32] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 03:47:28,852 [1] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 03:47:29,180 [15] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 03:47:29,180 [15] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 03:47:29,186 [15] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 03:47:29,234 [15] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 03:47:29,235 [15] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 03:52:42,046 [17] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 03:53:33,865 [1] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 03:53:34,185 [12] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 03:53:34,185 [12] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 03:53:34,190 [12] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 03:53:34,227 [12] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 03:53:34,317 [12] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 03:55:29,675 [15] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 03:55:38,953 [1] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 03:55:39,278 [12] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 03:55:39,278 [12] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 03:55:39,283 [12] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 03:55:39,387 [12] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 03:55:39,425 [12] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 04:06:05,874 [9] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 04:06:09,029 [29] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 04:06:23,901 [28] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 04:06:23,905 [28] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 04:06:23,920 [28] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 04:06:23,935 [28] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 04:08:06,836 [28] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 04:09:11,832 [28] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 04:09:15,146 [31] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 04:09:36,635 [28] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 04:09:36,637 [28] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 04:09:36,651 [28] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 04:09:36,685 [28] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 04:09:55,537 [28] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 04:11:55,873 [20] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 04:12:07,479 [26] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 04:12:26,399 [20] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 04:12:26,401 [20] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 04:12:26,411 [20] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 04:12:26,422 [20] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 04:13:21,714 [20] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 04:13:57,389 [20] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 04:13:57,391 [20] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 04:13:57,398 [20] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 13:15:35,514 [1] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 13:15:35,889 [5] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 13:15:35,890 [5] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 13:15:35,920 [5] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 13:15:38,685 [5] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 13:15:38,836 [5] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 13:28:27,442 [19] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 13:28:27,442 [19] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 13:28:27,462 [19] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 13:28:27,463 [19] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 13:29:12,106 [7] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 13:29:12,106 [7] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 13:29:12,107 [7] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 13:29:12,107 [7] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 13:32:11,664 [22] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 13:32:11,665 [22] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 13:32:11,688 [22] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 13:32:11,689 [22] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 13:52:34,175 [35] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 14:53:25,959 [1] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 14:53:26,026 [5] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 14:53:26,027 [5] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 14:53:26,034 [5] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 14:53:26,125 [5] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 14:53:44,944 [5] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 14:58:32,412 [13] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 14:58:32,412 [13] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 14:58:32,439 [13] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 14:58:32,442 [13] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:12:59,500 [16] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:12:59,501 [16] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:12:59,515 [16] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:12:59,518 [16] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:20:19,512 [22] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:20:19,512 [22] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:20:19,531 [22] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:20:19,535 [22] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:26:05,869 [26] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:26:05,869 [26] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:26:05,881 [26] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:26:05,884 [26] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:31:14,365 [23] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:31:14,366 [23] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:31:14,396 [23] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:31:14,399 [23] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:32:03,021 [23] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:32:03,022 [23] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:32:03,032 [23] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:32:03,036 [23] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:32:13,576 [30] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:32:13,577 [30] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:32:13,578 [30] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:32:13,579 [30] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:32:52,441 [23] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:32:52,442 [23] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:32:52,451 [23] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:33:06,404 [23] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:34:40,461 [30] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:34:40,461 [30] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:34:40,474 [30] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:34:40,478 [30] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:43:05,641 [37] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:43:05,642 [37] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:43:05,659 [37] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:43:05,662 [37] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:44:17,240 [35] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:44:17,240 [35] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:44:17,255 [35] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:44:17,259 [35] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:45:30,820 [37] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:45:30,852 [37] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:45:30,862 [37] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:45:30,864 [37] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:48:33,494 [36] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:48:33,494 [36] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:48:33,503 [36] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:48:33,506 [36] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:49:54,044 [38] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:49:54,044 [38] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:49:54,056 [38] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:49:54,059 [38] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:50:06,940 [35] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:50:06,940 [35] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:50:06,941 [35] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:50:06,942 [35] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:50:27,008 [28] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:50:27,009 [28] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:50:27,030 [28] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:50:34,787 [28] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:50:35,674 [38] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:50:35,675 [38] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:50:35,695 [38] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:50:35,696 [38] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:50:40,972 [38] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:50:40,972 [38] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:50:40,973 [38] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:50:40,974 [38] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:50:43,572 [38] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:50:43,572 [38] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:50:43,573 [38] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:50:43,573 [38] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:50:46,310 [28] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:50:46,311 [28] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:50:46,311 [28] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:50:46,312 [28] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:50:50,782 [38] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:50:50,782 [38] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:50:50,783 [38] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:50:50,783 [38] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:51:03,508 [34] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:51:03,508 [34] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:51:03,509 [34] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:51:03,509 [34] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 15:51:13,252 [35] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 15:51:13,252 [35] DEBUG GesColecoesWeb.GetViewGeral - qrcode=1234567890
+2012-07-03 15:51:13,253 [35] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 15:51:13,254 [35] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 16:11:26,616 [49] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 17:27:44,812 [1] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 17:27:44,932 [5] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 17:27:44,932 [5] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 17:27:44,942 [5] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 17:27:45,317 [5] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 17:27:45,342 [5] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 17:48:45,314 [16] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 18:50:35,772 [1] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 18:50:35,856 [5] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 18:50:35,857 [5] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 18:50:35,865 [5] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 18:50:35,966 [5] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 18:50:35,969 [5] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 18:56:50,998 [13] DEBUG GesColecoesWeb.SetUserFullBackup - Processing...
+2012-07-03 18:56:50,998 [13] DEBUG GesColecoesWeb.SetUserFullBackup - idUser=1, data=[{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"}]
+2012-07-03 18:56:51,142 [13] DEBUG GesColecoesWeb.SetUserFullBackup - Deserialization sucessfull!
+2012-07-03 18:56:51,545 [13] DEBUG GesColecoesWeb.SetUserFullBackup - Old user data deleted!
+2012-07-03 18:56:52,225 [13] DEBUG GesColecoesWeb.SetUserFullBackup - Finished.
+2012-07-03 18:57:18,108 [13] DEBUG GesColecoesWeb.SetUserFullBackup - Processing...
+2012-07-03 18:57:18,108 [13] DEBUG GesColecoesWeb.SetUserFullBackup - idUser=1, data=[{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"}]
+2012-07-03 18:57:18,109 [13] DEBUG GesColecoesWeb.SetUserFullBackup - Deserialization sucessfull!
+2012-07-03 18:57:18,110 [13] DEBUG GesColecoesWeb.SetUserFullBackup - Old user data deleted!
+2012-07-03 18:57:18,163 [13] DEBUG GesColecoesWeb.SetUserFullBackup - Finished.
+2012-07-03 19:00:43,034 [6] DEBUG GesColecoesWeb.SetUserFullBackup - Processing...
+2012-07-03 19:00:43,035 [6] DEBUG GesColecoesWeb.SetUserFullBackup - idUser=1, data=[{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"309","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"}]
+2012-07-03 19:00:43,037 [6] DEBUG GesColecoesWeb.SetUserFullBackup - Deserialization sucessfull!
+2012-07-03 19:00:43,070 [6] DEBUG GesColecoesWeb.SetUserFullBackup - Old user data deleted!
+2012-07-03 19:00:43,123 [6] DEBUG GesColecoesWeb.SetUserFullBackup - Finished.
+2012-07-03 19:01:09,730 [5] DEBUG GesColecoesWeb.SetUserFullBackup - Processing...
+2012-07-03 19:01:09,730 [5] DEBUG GesColecoesWeb.SetUserFullBackup - idUser=1, data=[{"id":"323","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"323","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"323","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"323","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"323","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"323","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"323","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"}]
+2012-07-03 19:01:09,731 [5] DEBUG GesColecoesWeb.SetUserFullBackup - Deserialization sucessfull!
+2012-07-03 19:01:09,733 [5] DEBUG GesColecoesWeb.SetUserFullBackup - Old user data deleted!
+2012-07-03 19:01:09,864 [5] DEBUG GesColecoesWeb.SetUserFullBackup - Finished.
+2012-07-03 19:01:21,075 [15] DEBUG GesColecoesWeb.SetUserFullBackup - Processing...
+2012-07-03 19:01:21,076 [15] DEBUG GesColecoesWeb.SetUserFullBackup - idUser=1, data=[{"id":"323","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"323","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"323","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"323","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"323","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"323","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"323","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"}]
+2012-07-03 19:01:21,078 [15] DEBUG GesColecoesWeb.SetUserFullBackup - Deserialization sucessfull!
+2012-07-03 19:01:21,082 [15] DEBUG GesColecoesWeb.SetUserFullBackup - Old user data deleted!
+2012-07-03 19:01:21,141 [15] DEBUG GesColecoesWeb.SetUserFullBackup - Finished.
+2012-07-03 19:03:11,936 [18] DEBUG GesColecoesWeb.SetUserFullBackup - Processing...
+2012-07-03 19:03:11,937 [18] DEBUG GesColecoesWeb.SetUserFullBackup - idUser=1, data=[{"id":"330","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"331","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"www.google.pt","ano":"2001","barcode":"098737493888","idUser":"1","Autores":"autor1"},{"id":"332","Editor":"editor1","titulo":"Senhor dos Aneis - As Duas Torres","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"Texto aqui","ano":"2002","barcode":"870329488484","idUser":"1","Autores":"autor1"},{"id":"333","Editor":"editor1","titulo":"Senhor dos Aneis - O Regresso do Rei","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"Mais um","ano":"2003","barcode":"573673272992","idUser":"1","Autores":"autor1"},{"id":"334","Editor":"editor2","titulo":"O Hobbit ou Lá e de Volta Outra Vez","Obs":"Edição Pirata","edicao":"Pre-Release","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"PirateBay","ano":"2010","barcode":"0000981818","idUser":"1","Autores":"autor2"},{"id":"335","Editor":"editor3","titulo":"A Mascara de Zorro","Obs":"Acção e Cat. Zeta Jones","edicao":" ","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"1233-teste-234","ano":"2004","barcode":"586762682828233","idUser":"1","Autores":"autor3"},{"id":"336","Editor":"editor3","titulo":"Pontes de Maddisson County","Obs":"Granda Seca","edicao":" ","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"www.Realizador.com","ano":"2007","barcode":"87383829128973","idUser":"1","Autores":"autor3"}]
+2012-07-03 19:03:11,939 [18] DEBUG GesColecoesWeb.SetUserFullBackup - Deserialization sucessfull!
+2012-07-03 19:03:11,964 [18] DEBUG GesColecoesWeb.SetUserFullBackup - Old user data deleted!
+2012-07-03 19:03:12,076 [18] DEBUG GesColecoesWeb.SetUserFullBackup - Finished.
+2012-07-03 19:13:39,481 [25] DEBUG GesColecoesWeb.SetUserFullBackup - Processing...
+2012-07-03 19:13:39,482 [25] DEBUG GesColecoesWeb.SetUserFullBackup - idUser=1, data=[{"id":"330","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"931983712973","ano":"2001","barcode":"1234567890","idUser":"1","Autores":"autor1"},{"id":"331","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"www.google.pt","ano":"2001","barcode":"098737493888","idUser":"1","Autores":"autor1"},{"id":"332","Editor":"editor1","titulo":"Senhor dos Aneis - As Duas Torres","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"Texto aqui","ano":"2002","barcode":"870329488484","idUser":"1","Autores":"autor1"},{"id":"333","Editor":"editor1","titulo":"Senhor dos Aneis - O Regresso do Rei","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"Mais um","ano":"2003","barcode":"573673272992","idUser":"1","Autores":"autor1"},{"id":"334","Editor":"editor2","titulo":"O Hobbit ou Lá e de Volta Outra Vez","Obs":"Edição Pirata","edicao":"Pre-Release","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"PirateBay","ano":"2010","barcode":"0000981818","idUser":"1","Autores":"autor2"},{"id":"335","Editor":"editor3","titulo":"A Mascara de Zorro","Obs":"Acção e Cat. Zeta Jones","edicao":" ","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"1233-teste-234","ano":"2004","barcode":"586762682828233","idUser":"1","Autores":"autor3"},{"id":"336","Editor":"editor3","titulo":"Pontes de Maddisson County","Obs":"Granda Seca","edicao":" ","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"www.Realizador.com","ano":"2007","barcode":"87383829128973","idUser":"1","Autores":"autor3"}]
+2012-07-03 19:13:39,483 [25] DEBUG GesColecoesWeb.SetUserFullBackup - Deserialization sucessfull!
+2012-07-03 19:13:39,492 [25] DEBUG GesColecoesWeb.SetUserFullBackup - Old user data deleted!
+2012-07-03 19:13:39,553 [25] DEBUG GesColecoesWeb.SetUserFullBackup - Finished.
+2012-07-03 19:31:49,225 [31] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 19:31:49,225 [31] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 19:31:49,232 [31] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 19:31:49,233 [31] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 19:32:09,693 [19] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 19:32:09,694 [19] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 19:32:09,695 [19] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 19:32:09,696 [19] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 19:37:08,488 [37] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 19:37:08,488 [37] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 19:37:08,489 [37] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 19:37:08,490 [37] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 19:39:46,744 [37] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 19:39:46,744 [37] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 19:39:46,745 [37] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 19:39:46,745 [37] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 19:43:59,589 [19] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 19:43:59,589 [19] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 19:43:59,594 [19] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 19:43:59,595 [19] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 20:29:05,862 [46] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 20:37:42,465 [1] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 20:37:42,525 [5] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 20:37:42,530 [5] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-6
+2012-07-03 20:37:42,535 [5] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 20:37:42,645 [5] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 20:37:42,730 [5] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 20:58:43,029 [36] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 21:06:53,955 [1] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 21:06:54,020 [5] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 21:06:54,020 [5] DEBUG GesColecoesWeb.GetViewGeral - barcode=5030930085865
+2012-07-03 21:06:54,025 [5] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 21:06:54,225 [5] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 21:07:31,685 [5] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 21:07:31,985 [5] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-6
+2012-07-03 21:07:32,020 [5] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 21:07:32,020 [5] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 21:08:17,307 [11] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 21:08:17,307 [11] DEBUG GesColecoesWeb.GetViewGeral - barcode=5030930085865
+2012-07-03 21:08:17,307 [11] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 21:09:29,765 [6] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 21:09:29,765 [6] DEBUG GesColecoesWeb.GetViewGeral - barcode=5030930085865
+2012-07-03 21:09:29,800 [6] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 21:09:29,800 [6] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 21:09:48,590 [13] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 21:09:48,895 [13] DEBUG GesColecoesWeb.GetViewGeral - barcode=5030930085865
+2012-07-03 21:09:48,895 [13] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 21:09:48,895 [13] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 21:14:41,657 [17] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 21:14:57,754 [1] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 21:14:58,789 [17] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 21:14:58,789 [5] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 21:14:58,794 [17] DEBUG GesColecoesWeb.GetViewGeral - barcode=5030930085865
+2012-07-03 21:14:58,794 [5] DEBUG GesColecoesWeb.GetViewGeral - barcode=5030930085865
+2012-07-03 21:14:58,804 [17] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 21:14:58,859 [5] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 21:14:58,869 [5] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 21:14:58,874 [17] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 21:14:58,879 [17] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 21:18:53,867 [21] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 21:18:54,167 [21] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-5
+2012-07-03 21:18:54,177 [21] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 21:19:32,162 [24] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 21:19:32,837 [24] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-5
+2012-07-03 21:19:32,842 [24] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 21:19:32,842 [24] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 21:20:24,707 [24] DEBUG GesColecoesWeb.SetUserFullBackup - Processing...
+2012-07-03 21:20:24,707 [24] DEBUG GesColecoesWeb.SetUserFullBackup - idUser=1, data=[{"id":"940","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"qrcode","ano":"2001","barcode":" ","idUser":"1","Autores":"autor1"},{"id":"941","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"qrcode","ano":"2001","barcode":" ","idUser":"1","Autores":"autor1"},{"id":"942","Editor":"editor1","titulo":"Senhor dos Aneis - As Duas Torres","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"qrcode","ano":"2002","barcode":" ","idUser":"1","Autores":"autor1"},{"id":"943","Editor":"editor1","titulo":"Senhor dos Aneis - O Regresso do Rei","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"qrcode","ano":"2003","barcode":" ","idUser":"1","Autores":"autor1"},{"id":"944","Editor":"editor2","titulo":"O Hobbit ou Lá e de Volta Outra Vez","Obs":"Edição Pirata","edicao":"Pre-Release","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"qrcode","ano":"2010","barcode":" ","idUser":"1","Autores":"autor2"},{"id":"945","Editor":"editor3","titulo":"A Mascara de Zorro","Obs":"Acção e Cat. Zeta Jones","edicao":"qrcode","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":" ","ano":"2004","barcode":" ","idUser":"1","Autores":"autor3"},{"id":"946","Editor":"editor3","titulo":"Pontes de Maddisson County","Obs":"Granda Seca","edicao":" ","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":" ","ano":"2007","barcode":" ","idUser":"1","Autores":"autor3"},{"id":"947","Editor":"EA","titulo":"Sims 3","Obs":"yxt","edicao":"1","TipoItem":"Jogo","ExtTipoItem":"XBOX","qrcode":"","ano":"2007","barcode":"5030930085865                                     ","idUser":"1","Autores":"null"},{"id":"948","Editor":"EA","titulo":"Sims 3","Obs":"tesye3","edicao":"1","TipoItem":"Jogo","ExtTipoItem":"XBOX","qrcode":"","ano":"2007","barcode":"5030930085865                                     ","idUser":"1","Autores":"EA"},{"id":"949","Editor":"Silabo","titulo":"SPSS: Guia prático de utilização de dados para Ciências Sociais e Psicologia 5ª Ed","Obs":"gjfhfgffhh","edicao":"5","TipoItem":"Livro","ExtTipoItem":"Capa dura","qrcode":"972-618-425-5","ano":"2005","barcode":"                                                  ","idUser":"1","Autores":"Alexandre Pereira"}]
+2012-07-03 21:20:24,717 [24] DEBUG GesColecoesWeb.SetUserFullBackup - Deserialization sucessfull!
+2012-07-03 21:20:24,727 [24] DEBUG GesColecoesWeb.SetUserFullBackup - Old user data deleted!
+2012-07-03 21:20:24,792 [24] DEBUG GesColecoesWeb.SetUserFullBackup - Finished.
+2012-07-03 21:22:31,367 [21] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 21:22:32,297 [21] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 21:22:32,307 [21] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 21:22:32,307 [21] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 21:22:50,082 [16] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 21:22:51,107 [16] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 21:22:51,112 [16] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 21:22:51,112 [16] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 21:22:54,042 [21] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 21:22:54,242 [21] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 21:22:54,242 [21] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 21:22:54,242 [21] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 21:34:46,443 [7] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 21:34:46,648 [7] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-6
+2012-07-03 21:34:46,658 [7] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 21:34:46,658 [7] DEBUG GesColecoesWeb.Global - Application error...
+2012-07-03 21:35:05,838 [8] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 21:35:06,043 [8] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-5
+2012-07-03 21:35:06,043 [8] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 21:35:06,043 [8] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 21:37:13,548 [7] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 21:37:13,933 [7] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 21:37:13,938 [7] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 21:37:13,938 [7] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 21:38:32,128 [27] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 21:38:32,988 [27] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-7
+2012-07-03 21:38:32,988 [27] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 21:38:32,988 [27] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 21:39:11,243 [26] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 21:39:11,593 [26] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-8
+2012-07-03 21:39:11,593 [26] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 21:39:11,593 [26] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 21:59:54,465 [35] DEBUG GesColecoesWeb.Global - Application end.
+2012-07-03 22:02:40,240 [1] DEBUG GesColecoesWeb.Global - Application start...
+2012-07-03 22:02:40,300 [5] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:02:40,300 [5] DEBUG GesColecoesWeb.GetViewGeral - barcode=5030944058749
+2012-07-03 22:02:40,310 [5] INFO  GesColecoesWeb.Data.DataBase - DataBase[0]
+2012-07-03 22:02:40,350 [5] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:02:40,360 [5] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:02:58,345 [8] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:02:59,110 [8] DEBUG GesColecoesWeb.GetViewGeral - barcode=5030930085865
+2012-07-03 22:02:59,115 [8] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:02:59,115 [8] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:03:28,145 [8] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:03:28,420 [8] DEBUG GesColecoesWeb.GetViewGeral - barcode=5030944058749
+2012-07-03 22:03:28,420 [8] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:03:28,425 [8] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:04:14,556 [5] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:04:14,916 [5] DEBUG GesColecoesWeb.GetViewGeral - barcode=5030930085865
+2012-07-03 22:04:14,921 [5] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:04:14,921 [5] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:19:54,012 [34] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:19:54,312 [34] DEBUG GesColecoesWeb.GetViewGeral - barcode=5030944058749
+2012-07-03 22:19:54,322 [34] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:19:54,322 [34] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:21:13,777 [35] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:21:15,012 [35] DEBUG GesColecoesWeb.GetViewGeral - barcode=5030944058749
+2012-07-03 22:21:15,012 [35] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:21:15,012 [35] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:22:05,547 [30] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:22:05,892 [30] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-5
+2012-07-03 22:22:05,897 [30] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:22:05,897 [30] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:22:34,177 [37] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:22:34,667 [37] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-5
+2012-07-03 22:22:34,672 [37] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:22:34,672 [37] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:22:52,847 [36] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:22:53,097 [36] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-8
+2012-07-03 22:22:53,102 [36] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:22:53,102 [36] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:24:57,017 [28] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:24:57,412 [28] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-8
+2012-07-03 22:24:57,412 [28] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:24:57,412 [28] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:25:25,702 [30] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 22:25:25,982 [30] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 22:25:25,992 [30] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 22:25:25,997 [30] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 22:28:09,213 [30] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:28:09,513 [30] DEBUG GesColecoesWeb.GetViewGeral - barcode=5030944058749
+2012-07-03 22:28:09,513 [30] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:28:09,513 [30] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:29:01,388 [30] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:29:01,633 [30] DEBUG GesColecoesWeb.GetViewGeral - barcode=5030944058749
+2012-07-03 22:29:01,633 [30] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:29:01,633 [30] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:30:47,958 [48] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:30:49,048 [48] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-7
+2012-07-03 22:30:49,048 [48] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:30:49,053 [48] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:31:18,508 [53] DEBUG GesColecoesWeb.SetUserFullBackup - Processing...
+2012-07-03 22:31:19,343 [53] DEBUG GesColecoesWeb.SetUserFullBackup - idUser=1, data=[{"id":"997","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"qrcode","ano":"2001","barcode":"                                                  ","idUser":"1","Autores":"autor1"},{"id":"998","Editor":"editor1","titulo":"Senhor dos Aneis - A Irmandade do Anel","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"qrcode","ano":"2001","barcode":"                                                  ","idUser":"1","Autores":"autor1"},{"id":"999","Editor":"editor1","titulo":"Senhor dos Aneis - As Duas Torres","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"qrcode","ano":"2002","barcode":"                                                  ","idUser":"1","Autores":"autor1"},{"id":"1000","Editor":"editor1","titulo":"Senhor dos Aneis - O Regresso do Rei","Obs":"Edição Colecionador Autografada","edicao":"1a","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"qrcode","ano":"2003","barcode":"                                                  ","idUser":"1","Autores":"autor1"},{"id":"1001","Editor":"editor2","titulo":"O Hobbit ou Lá e de Volta Outra Vez","Obs":"Edição Pirata","edicao":"Pre-Release","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":"qrcode","ano":"2010","barcode":"                                                  ","idUser":"1","Autores":"autor2"},{"id":"1002","Editor":"editor3","titulo":"A Mascara de Zorro","Obs":"Acção e Cat. Zeta Jones","edicao":"qrcode","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":" ","ano":"2004","barcode":"                                                  ","idUser":"1","Autores":"autor3"},{"id":"1003","Editor":"editor3","titulo":"Pontes de Maddisson County","Obs":"Granda Seca","edicao":" ","TipoItem":"Filme","ExtTipoItem":"DVD","qrcode":" ","ano":"2007","barcode":"                                                  ","idUser":"1","Autores":"autor3"},{"id":"1004","Editor":"EA","titulo":"Sims 3","Obs":"yxt","edicao":"1","TipoItem":"Jogo","ExtTipoItem":"XBOX","qrcode":"","ano":"2007","barcode":"5030930085865                                     ","idUser":"1","Autores":"null"},{"id":"1005","Editor":"EA","titulo":"Sims 3","Obs":"tesye3","edicao":"1","TipoItem":"Jogo","ExtTipoItem":"XBOX","qrcode":"","ano":"2007","barcode":"5030930085865                                     ","idUser":"1","Autores":"EA"},{"id":"1006","Editor":"Silabo","titulo":"SPSS: Guia prático de utilização de dados para Ciências Sociais e Psicologia 5ª Ed","Obs":"gjfhfgffhh","edicao":"5","TipoItem":"Livro","ExtTipoItem":"Capa dura","qrcode":"972-618-425-5","ano":"2005","barcode":"                                                  ","idUser":"1","Autores":"Alexandre Pereira"},{"id":"1007","Editor":"EA","titulo":"Sims 3","Obs":"","edicao":"1","TipoItem":"Jogo","ExtTipoItem":"PlayStation","qrcode":"","ano":"2007","barcode":"5030944058749                                     ","idUser":"1","Autores":"EA"}]
+2012-07-03 22:31:19,343 [53] DEBUG GesColecoesWeb.SetUserFullBackup - Deserialization sucessfull!
+2012-07-03 22:31:19,348 [53] DEBUG GesColecoesWeb.SetUserFullBackup - Old user data deleted!
+2012-07-03 22:31:19,413 [53] DEBUG GesColecoesWeb.SetUserFullBackup - Finished.
+2012-07-03 22:31:28,428 [41] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 22:31:28,793 [41] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 22:31:28,793 [41] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 22:31:28,793 [41] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 22:39:26,234 [56] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 22:39:26,439 [56] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 22:39:26,449 [56] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 22:39:26,449 [56] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 22:39:34,359 [56] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 22:39:34,664 [56] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 22:39:34,664 [56] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 22:39:34,664 [56] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 22:41:17,019 [64] DEBUG GesColecoesWeb.ListUserFullBackup - Processing...
+2012-07-03 22:41:17,269 [64] DEBUG GesColecoesWeb.ListUserFullBackup - idUser=1
+2012-07-03 22:41:17,269 [64] INFO  GesColecoesWeb.ListUserFullBackup - Row found!
+2012-07-03 22:41:17,269 [64] DEBUG GesColecoesWeb.ListUserFullBackup - Finished.
+2012-07-03 22:44:56,304 [61] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:44:56,599 [61] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-7
+2012-07-03 22:44:56,604 [61] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:44:56,604 [61] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:47:58,959 [67] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:47:59,164 [67] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-7
+2012-07-03 22:47:59,174 [67] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:47:59,174 [67] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:49:30,869 [73] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:49:31,439 [73] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-5
+2012-07-03 22:49:31,439 [73] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:49:31,444 [73] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:51:02,769 [67] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:51:02,769 [67] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-5
+2012-07-03 22:51:02,770 [67] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:51:02,770 [67] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:51:19,259 [69] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:51:19,259 [69] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-7
+2012-07-03 22:51:19,259 [69] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:51:19,259 [69] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:53:32,189 [59] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:53:32,488 [59] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-5
+2012-07-03 22:53:32,490 [59] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:53:32,491 [59] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 22:57:19,924 [74] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 22:57:20,223 [74] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-5
+2012-07-03 22:57:20,233 [74] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 22:57:20,234 [74] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 23:11:15,984 [72] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 23:11:16,411 [72] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-5
+2012-07-03 23:11:16,420 [72] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 23:11:16,421 [72] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 23:15:30,631 [80] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 23:15:30,874 [80] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-5
+2012-07-03 23:15:30,883 [80] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 23:15:30,884 [80] DEBUG GesColecoesWeb.GetViewGeral - Finished.
+2012-07-03 23:15:56,475 [80] DEBUG GesColecoesWeb.GetViewGeral - Processing...
+2012-07-03 23:15:56,682 [80] DEBUG GesColecoesWeb.GetViewGeral - qrcode=972-618-425-5
+2012-07-03 23:15:56,683 [80] INFO  GesColecoesWeb.GetViewGeral - Row found!
+2012-07-03 23:15:56,683 [80] DEBUG GesColecoesWeb.GetViewGeral - Finished.
