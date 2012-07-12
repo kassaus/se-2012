@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/botao7"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/id_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <!-- android:visibility="gone" -->
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ano_pub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/edition"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/obs_pess"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp" />
+
+</LinearLayout>
