@@ -120,11 +120,19 @@ public class DBAdapter {
 
 		return db.query(true, "item", new String[] { "_id", "tipo", "titulo",
 				"autor", "editor", "ano_pub", "edicao", "qrcode", "barcode",
-				"ext_tipo", "obs_pess" }, coluna + "= ?", new String[] { Valor
-				+ "%" }, null, null, null, null);
+				"ext_tipo", "obs_pess" }, coluna + "= ?", new String[] { Valor }, 
+				null, null, null, null);
 	}
 
-	
+	public Cursor getItemByQrcode(String Valor) {
+
+		return db.query(true, "item",
+				new String[] {  "_id", "tipo", "titulo",
+				"autor", "editor", "ano_pub", "edicao", "qrcode", "barcode",
+				"ext_tipo", "obs_pess", "id_coll" }, "qrcode="
+						+ Valor, null, null, null, null, null);
+
+	}
 	
 	public Cursor getItemById(int id) {
 
