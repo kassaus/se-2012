@@ -1,0 +1,16 @@
+\\GFIPTNMANSO\GesColecoesWeb\GesColecoesWeb\bin\GesColecoesWeb.dll
+\\GFIPTNMANSO\GesColecoesWeb\GesColecoesWeb\bin\GesColecoesWeb.pdb
+\\GFIPTNMANSO\GesColecoesWeb\GesColecoesWeb\bin\GesColecoesWeb.Data.dll
+\\GFIPTNMANSO\GesColecoesWeb\GesColecoesWeb\bin\log4net.dll
+\\GFIPTNMANSO\GesColecoesWeb\GesColecoesWeb\bin\GesColecoesWeb.Data.pdb
+\\GFIPTNMANSO\GesColecoesWeb\GesColecoesWeb\obj\Debug\ResolveAssemblyReference.cache
+\\GFIPTNMANSO\GesColecoesWeb\GesColecoesWeb\obj\Debug\GesColecoesWeb.dll
+\\GFIPTNMANSO\GesColecoesWeb\GesColecoesWeb\obj\Debug\GesColecoesWeb.pdb
+D:\Work\Backup_c\Nelson\Mydocs\Pessoal\UNIV\NovaCandidatura2011\SistemasEmbebidos\Trab\GesColecoesWeb\GesColecoesWeb\bin\GesColecoesWeb.dll
+D:\Work\Backup_c\Nelson\Mydocs\Pessoal\UNIV\NovaCandidatura2011\SistemasEmbebidos\Trab\GesColecoesWeb\GesColecoesWeb\bin\GesColecoesWeb.pdb
+D:\Work\Backup_c\Nelson\Mydocs\Pessoal\UNIV\NovaCandidatura2011\SistemasEmbebidos\Trab\GesColecoesWeb\GesColecoesWeb\bin\GesColecoesWeb.Data.dll
+D:\Work\Backup_c\Nelson\Mydocs\Pessoal\UNIV\NovaCandidatura2011\SistemasEmbebidos\Trab\GesColecoesWeb\GesColecoesWeb\bin\log4net.dll
+D:\Work\Backup_c\Nelson\Mydocs\Pessoal\UNIV\NovaCandidatura2011\SistemasEmbebidos\Trab\GesColecoesWeb\GesColecoesWeb\bin\GesColecoesWeb.Data.pdb
+D:\Work\Backup_c\Nelson\Mydocs\Pessoal\UNIV\NovaCandidatura2011\SistemasEmbebidos\Trab\GesColecoesWeb\GesColecoesWeb\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\Backup_c\Nelson\Mydocs\Pessoal\UNIV\NovaCandidatura2011\SistemasEmbebidos\Trab\GesColecoesWeb\GesColecoesWeb\obj\Debug\GesColecoesWeb.dll
+D:\Work\Backup_c\Nelson\Mydocs\Pessoal\UNIV\NovaCandidatura2011\SistemasEmbebidos\Trab\GesColecoesWeb\GesColecoesWeb\obj\Debug\GesColecoesWeb.pdb
