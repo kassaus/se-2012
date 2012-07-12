@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/backup"
+        android:icon="@drawable/backup"
+        android:title="@string/doBackup"/>
+        <item
+        android:id="@+id/restore"
+        android:icon="@drawable/restore"
+        android:title="@string/doRestore"/>
+    <item
+        android:id="@+id/sair"
+        android:icon="@drawable/sair"
+        android:title="@string/exit"/>
+
+</menu>
